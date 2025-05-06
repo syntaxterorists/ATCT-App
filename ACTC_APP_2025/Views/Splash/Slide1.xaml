@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ATCT2025App.Views.SplashSlides.Slide1">
+    <VerticalStackLayout Spacing="20" 
+                         Padding="30"
+                         VerticalOptions="CenterAndExpand">
+
+        <!-- Slide Image -->
+        <Image Source="welcome_illustration.png"
+               HeightRequest="250"
+               HorizontalOptions="Center" />
+
+        <!-- Slide Title -->
+        <Label Text="Welcome to ATCT 2025"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="{StaticResource Primary}"
+               HorizontalOptions="Center" />
+
+        <!-- Slide Description -->
+        <Label Text="Annual Technology Conference and Training 2025 - Your gateway to the future of technology."
+               FontSize="16"
+               TextColor="{StaticResource TextSecondary}"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center" />
+    </VerticalStackLayout>
+</ContentView>
