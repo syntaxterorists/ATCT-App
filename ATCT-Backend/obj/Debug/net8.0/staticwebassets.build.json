@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jgVmUKBB+NtxIe080ZUnOBhuA+k+8tGiSQOvXvDFgN8=",
+  "Source": "ATCT-Backend",
+  "BasePath": "_content/ATCT-Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
