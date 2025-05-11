@@ -1,4 +1,10 @@
-﻿namespace ATCT_Backend.Models
+﻿
+
+// Creating the User class with properties for Id, Name, Email, and Password
+
+
+
+namespace ATCT_Backend.Models
 {
     public class User
     {

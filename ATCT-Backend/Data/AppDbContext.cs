@@ -2,6 +2,9 @@
 using ATCT_Backend.Models;
 using System.Collections.Generic;
 
+
+// Creating the AppDbContext class that inherits from DbContext. Used to interact with the database.
+
 namespace ATCT_Backend.Data
 {
     public class AppDbContext : DbContext

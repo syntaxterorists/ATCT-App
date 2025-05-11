@@ -15,12 +15,27 @@ namespace ATCT2025.Backend.Controllers
             _context = context;
         }
 
+        //Getting all speakers
+
         [HttpGet]
         public ActionResult<IEnumerable<Speaker>> GetSpeakers()
         {
             return Ok(_context.Speakers.ToList());
         }
 
+
+        // Getting a speaker by ID
+
+        [HttpGet("{id}")]
+        public IActionResult GetSpeakerById(int id)
+        {
+            var speaker = _context.Speakers.Find(id);
+            if (speaker == null) return NotFound();
+            return Ok(speaker);
+        }
+
+
+        // Creating a speaker
         [HttpPost]
         public ActionResult<Speaker> AddSpeaker(Speaker speaker)
         {

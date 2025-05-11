@@ -16,6 +16,7 @@ namespace ATCT2025.Backend.Controllers
             _context = context;
         }
 
+        // Creating a session
         // POST: api/Sessions
         [HttpPost]
         public async Task<IActionResult> CreateSession([FromBody] Session session)
@@ -25,6 +26,7 @@ namespace ATCT2025.Backend.Controllers
             return CreatedAtAction(nameof(GetSessionById), new { id = session.Id }, session);
         }
 
+        // Get a session by ID
         // GET by ID
         [Authorize]
         [HttpGet("{id}")]
@@ -37,6 +39,7 @@ namespace ATCT2025.Backend.Controllers
             return Ok(session);
         }
 
+        // Updating a session
         // PUT: api/Sessions/5
         [Authorize]
         [HttpPut("{id}")]
@@ -56,6 +59,7 @@ namespace ATCT2025.Backend.Controllers
             return NoContent();
         }
 
+        // Deleting a session
         // DELETE: api/Sessions/5
         [Authorize]
         [HttpDelete("{id}")]

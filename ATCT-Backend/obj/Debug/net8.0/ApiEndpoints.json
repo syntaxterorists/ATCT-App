@@ -216,6 +216,22 @@
     ]
   },
   {
+    "ContainingType": "ATCT2025.Backend.Controllers.SpeakersController",
+    "Method": "GetSpeakerById",
+    "RelativePath": "api/Speakers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ATCT_Backend.Controllers.UserController",
     "Method": "CreateUser",
     "RelativePath": "api/User",
