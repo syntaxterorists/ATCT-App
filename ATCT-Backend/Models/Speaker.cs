@@ -1,4 +1,9 @@
-﻿namespace ATCT_Backend.Models
+﻿
+
+// Creating the Speaker class with properties for Id, Name, and Description
+
+
+namespace ATCT_Backend.Models
 {
     public class Speaker
     {

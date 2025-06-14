@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ATCT_Backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250510143953_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250614151330_AddUserSessionAndLimitToSession")]
+    partial class AddUserSessionAndLimitToSession
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,31 +24,6 @@ namespace ATCT_Backend.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("ATCT2025.Backend.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PasswordHash")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
-                });
 
             modelBuilder.Entity("ATCT_Backend.Models.Location", b =>
                 {
@@ -83,6 +58,9 @@ namespace ATCT_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CurrentAttendees")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -93,6 +71,9 @@ namespace ATCT_Backend.Migrations
                     b.Property<string>("Location")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaxAttendees")
+                        .HasColumnType("int");
 
                     b.Property<int>("SpeakerId")
                         .HasColumnType("int");
@@ -136,6 +117,46 @@ namespace ATCT_Backend.Migrations
                     b.ToTable("Speakers");
                 });
 
+            modelBuilder.Entity("ATCT_Backend.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ATCT_Backend.Models.UserSession", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SessionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "SessionId");
+
+                    b.HasIndex("SessionId");
+
+                    b.ToTable("UserSessions");
+                });
+
             modelBuilder.Entity("ATCT_Backend.Models.Session", b =>
                 {
                     b.HasOne("ATCT_Backend.Models.Speaker", "Speaker")
@@ -145,6 +166,35 @@ namespace ATCT_Backend.Migrations
                         .IsRequired();
 
                     b.Navigation("Speaker");
+                });
+
+            modelBuilder.Entity("ATCT_Backend.Models.UserSession", b =>
+                {
+                    b.HasOne("ATCT_Backend.Models.Session", "Session")
+                        .WithMany("UserSessions")
+                        .HasForeignKey("SessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ATCT_Backend.Models.User", "User")
+                        .WithMany("UserSessions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Session");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ATCT_Backend.Models.Session", b =>
+                {
+                    b.Navigation("UserSessions");
+                });
+
+            modelBuilder.Entity("ATCT_Backend.Models.User", b =>
+                {
+                    b.Navigation("UserSessions");
                 });
 #pragma warning restore 612, 618
         }

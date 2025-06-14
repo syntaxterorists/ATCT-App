@@ -10,6 +10,8 @@ using BCrypt.Net;
 
 namespace ATCT_Backend.Controllers
 {
+    // Defines this class as an API controller with route 'api/auth'
+
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -23,19 +25,26 @@ namespace ATCT_Backend.Controllers
             _configuration = configuration;
         }
 
+        // POST: api/auth/register
+
         [HttpPost("register")]
         public IActionResult Register(RegisterDto dto)
         {
+            // Check if a user with the provided email already exists
+
             if (_context.Users.Any(u => u.Email == dto.Email))
                 return BadRequest("Korisnik već postoji.");
 
+
+            // Create a new User object with hashed password
             var user = new User
             {
                 Email = dto.Email,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password), //Password is hashed
                 FullName = dto.FullName
             };
 
+            // Add the new user to the database
             _context.Users.Add(user);
             _context.SaveChanges();
 
@@ -45,16 +54,28 @@ namespace ATCT_Backend.Controllers
         [HttpPost("login")]
         public IActionResult Login(LoginDto dto)
         {
+
+            // Try to find the user by email
+
             var user = _context.Users.FirstOrDefault(u => u.Email == dto.Email);
+
+            // If user not found or password doesn't match, return unauthorized
+
             if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
                 return Unauthorized("Neispravni podaci.");
+
+            // If login is successful, generate JWT token and return it
 
             var token = GenerateJwtToken(user);
             return Ok(new { token });
         }
 
+
+        // Helper method to generate a JWT token for the authenticated user
         private string GenerateJwtToken(User user)
         {
+
+            // Define claims (user identity data) that will be stored in the token
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
@@ -64,6 +85,8 @@ namespace ATCT_Backend.Controllers
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            // Create the token with expiration time, claims, issuer and audience
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],

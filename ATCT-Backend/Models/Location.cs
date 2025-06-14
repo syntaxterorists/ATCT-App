@@ -1,4 +1,10 @@
-﻿namespace ATCT_Backend.Models
+﻿
+
+
+// Creating the Location class and defining all the properties
+
+
+namespace ATCT_Backend.Models
 {
     public class Location
     {

@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ATCT_Backend.Data;
 using ATCT_Backend.Models;
+using QRCoder;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace ATCT_Backend.Controllers
 {
@@ -15,6 +19,7 @@ namespace ATCT_Backend.Controllers
             _context = context;
         }
 
+        // Creating a user
         // POST: api/User
         [HttpPost]
         public IActionResult CreateUser([FromBody] User user)
@@ -28,6 +33,7 @@ namespace ATCT_Backend.Controllers
             return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
         }
 
+        // Getting a user by id
         // GET: api/User/5
         [HttpGet("{id}")]
         public IActionResult GetUserById(int id)
@@ -37,6 +43,8 @@ namespace ATCT_Backend.Controllers
             return Ok(user);
         }
 
+
+        // Deleting a user by id
         // DELETE: api/User/5
         [HttpDelete("{id}")]
         public IActionResult DeleteUser(int id)
@@ -51,6 +59,7 @@ namespace ATCT_Backend.Controllers
             return NoContent();
         }
 
+        // Updating a user by id
         // PUT: api/User/5
         [HttpPut("{id}")]
         public IActionResult UpdateUser(int id, [FromBody] User updatedUser)
@@ -62,15 +71,35 @@ namespace ATCT_Backend.Controllers
             if (existingUser == null)
                 return NotFound();
 
-            // Ažuriraj potrebna polja
+            // For updating, you can choose to update only specific fields or all fields.
             existingUser.FullName = updatedUser.FullName;
             existingUser.Email = updatedUser.Email;
-            // Dodaj i ostala polja ako ih imaš
+            existingUser.PasswordHash = updatedUser.PasswordHash;
+            
 
             _context.Users.Update(existingUser);
             _context.SaveChanges();
 
             return Ok(existingUser);
         }
+
+        [HttpGet("{id}/qrcode")]
+        public IActionResult GetUserQrCode(int id)
+        {
+            var user = _context.Users.Find(id);
+            if (user == null)
+                return NotFound();
+
+            var qrText = $" Ime: {user.FullName}, Email: {user.Email}";
+
+
+            using var qrGenerator = new QRCodeGenerator();
+            using var qrData = qrGenerator.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q);
+            var qrCode = new PngByteQRCode(qrData);
+            var qrCodeAsPng = qrCode.GetGraphic(20); // byte[]
+
+            return File(qrCodeAsPng, "image/png");
+        }
+
     }
 }

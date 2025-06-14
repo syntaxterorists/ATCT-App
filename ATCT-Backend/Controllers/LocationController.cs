@@ -15,6 +15,7 @@ namespace ATCT2025.Backend.Controllers
             _context = context;
         }
 
+        // Create a new location
         // POST: api/Locations
         [HttpPost]
         public async Task<IActionResult> CreateLocation([FromBody] Location location)
@@ -24,6 +25,7 @@ namespace ATCT2025.Backend.Controllers
             return CreatedAtAction(nameof(GetLocationById), new { id = location.Id }, location);
         }
 
+        // Getting a location by ID
         // GET by ID (helper for CreatedAtAction)
         [HttpGet("{id}")]
         public async Task<IActionResult> GetLocationById(int id)
@@ -35,6 +37,7 @@ namespace ATCT2025.Backend.Controllers
             return Ok(location);
         }
 
+        // Updating a location
         // PUT: api/Locations/5
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateLocation(int id, [FromBody] Location updatedLocation)
@@ -51,6 +54,7 @@ namespace ATCT2025.Backend.Controllers
             return NoContent();
         }
 
+        // Deleting a location by id
         // DELETE: api/Locations/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLocation(int id)

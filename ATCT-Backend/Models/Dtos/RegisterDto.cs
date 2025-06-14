@@ -1,4 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+
+// This file is part of ATCT-Backend project.
+// Used to divide the code into smaller files for better organization and maintainability, clean the code sent to the backend. 
+
+
+using System.ComponentModel.DataAnnotations;
 
 namespace ATCT_Backend.Models.Dtos
 {

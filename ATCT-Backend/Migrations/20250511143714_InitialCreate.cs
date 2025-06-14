@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+
+// Database migration for the ATCT_Backend project
+
+
 namespace ATCT_Backend.Migrations
 {
     /// <inheritdoc />
