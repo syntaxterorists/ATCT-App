@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ATCT_Backend.Data;
 using ATCT_Backend.Models;
+using QRCoder;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace ATCT_Backend.Controllers
 {
@@ -78,5 +82,24 @@ namespace ATCT_Backend.Controllers
 
             return Ok(existingUser);
         }
+
+        [HttpGet("{id}/qrcode")]
+        public IActionResult GetUserQrCode(int id)
+        {
+            var user = _context.Users.Find(id);
+            if (user == null)
+                return NotFound();
+
+            var qrText = $" Ime: {user.FullName}, Email: {user.Email}";
+
+
+            using var qrGenerator = new QRCodeGenerator();
+            using var qrData = qrGenerator.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q);
+            var qrCode = new PngByteQRCode(qrData);
+            var qrCodeAsPng = qrCode.GetGraphic(20); // byte[]
+
+            return File(qrCodeAsPng, "image/png");
+        }
+
     }
 }

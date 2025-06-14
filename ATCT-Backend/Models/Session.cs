@@ -17,5 +17,8 @@ namespace ATCT_Backend.Models
         public int SpeakerId { get; set; }
         public Speaker? Speaker { get; set; }
         public string Location { get; set; } = string.Empty;
+        public int MaxAttendees { get; set; }
+        public int CurrentAttendees { get; set; }
+        public ICollection<UserSession>? UserSessions { get; set; }
     }
 }

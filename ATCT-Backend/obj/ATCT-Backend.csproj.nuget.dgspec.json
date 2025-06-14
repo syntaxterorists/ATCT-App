@@ -73,9 +73,17 @@
               "target": "Package",
               "version": "[8.9.0, )"
             },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.6, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

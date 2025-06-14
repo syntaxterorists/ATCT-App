@@ -32,6 +32,75 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ATCT_Backend.Controllers.CheckInController",
+    "Method": "CheckInUser",
+    "RelativePath": "api/CheckIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sessionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ATCT_Backend.Controllers.FeedbackController",
+    "Method": "SubmitFeedback",
+    "RelativePath": "api/Feedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedback",
+        "Type": "ATCT_Backend.Models.SessionFeedback",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ATCT_Backend.Controllers.FeedbackController",
+    "Method": "GetFeedbackForSession",
+    "RelativePath": "api/Feedback/session/{sessionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sessionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ATCT_Backend.Controllers.FeedbackController",
+    "Method": "GetAverageRating",
+    "RelativePath": "api/Feedback/session/{sessionId}/average-rating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sessionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ATCT2025.Backend.Controllers.LocationsController",
     "Method": "CreateLocation",
     "RelativePath": "api/Locations",
@@ -170,6 +239,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ATCT2025.Backend.Controllers.SessionsController",
+    "Method": "RegisterUserToSession",
+    "RelativePath": "api/Sessions/{sessionId}/register/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sessionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ATCT2025.Backend.Controllers.SpeakersController",
     "Method": "GetSpeakers",
     "RelativePath": "api/Speakers",
@@ -295,6 +385,22 @@
       {
         "Name": "updatedUser",
         "Type": "ATCT_Backend.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ATCT_Backend.Controllers.UserController",
+    "Method": "GetUserQrCode",
+    "RelativePath": "api/User/{id}/qrcode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

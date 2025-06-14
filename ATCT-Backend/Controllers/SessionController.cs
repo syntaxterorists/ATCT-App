@@ -2,6 +2,7 @@
 using ATCT_Backend.Data;
 using ATCT_Backend.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace ATCT2025.Backend.Controllers
 {
@@ -28,11 +29,13 @@ namespace ATCT2025.Backend.Controllers
 
         // Get a session by ID
         // GET by ID
-        [Authorize]
+        //[Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetSessionById(int id)
         {
-            var session = await _context.Sessions.FindAsync(id);
+            var session = await _context.Sessions
+        .Include(s => s.Speaker) // učitava povezani entitet
+        .FirstOrDefaultAsync(s => s.Id == id);
             if (session == null)
                 return NotFound();
 
@@ -73,5 +76,39 @@ namespace ATCT2025.Backend.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
+        [HttpPost("{sessionId}/register/{userId}")]
+        public async Task<IActionResult> RegisterUserToSession(int sessionId, int userId)
+        {
+            var session = await _context.Sessions.FindAsync(sessionId);
+            if (session == null)
+                return NotFound("Sesija nije pronađena.");
+
+            if (session.CurrentAttendees >= session.MaxAttendees)
+                return BadRequest("Sesija je popunjena.");
+
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+                return NotFound("Korisnik nije pronađen.");
+
+            // Provjera da li je već registrovan
+            bool alreadyRegistered = _context.UserSessions.Any(us => us.SessionId == sessionId && us.UserId == userId);
+            if (alreadyRegistered)
+                return BadRequest("Korisnik je već prijavljen na ovu sesiju.");
+
+            session.CurrentAttendees += 1;
+
+            var userSession = new UserSession
+            {
+                SessionId = sessionId,
+                UserId = userId
+            };
+
+            _context.UserSessions.Add(userSession);
+            await _context.SaveChangesAsync();
+
+            return Ok("Uspješno ste prijavljeni na sesiju.");
+        }
+
     }
 }
