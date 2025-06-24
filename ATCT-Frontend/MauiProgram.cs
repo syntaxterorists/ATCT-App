@@ -13,6 +13,7 @@ namespace ATCT_Frontend
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("OCRAEXT.TTF", "OcrAExtended");
                 });
 
 #if DEBUG
