@@ -11,6 +11,7 @@
         <!-- 1) Scrollable main content -->
         <ScrollView Grid.Row="0">
             <!-- …your content… -->
+            
         </ScrollView>
 
         <!-- 2) Locked bottom nav bar -->

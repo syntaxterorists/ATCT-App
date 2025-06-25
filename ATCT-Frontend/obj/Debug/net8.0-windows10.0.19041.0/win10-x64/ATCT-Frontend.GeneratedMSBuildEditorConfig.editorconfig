@@ -64,6 +64,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.HomeSc
 build_metadata.AdditionalFiles.TargetPath = Views\HomeScreen.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomeScreen.xaml
 
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/InfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.InfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InfoPage.xaml
+
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.LoginPage.xaml
@@ -94,6 +100,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.Onboar
 build_metadata.AdditionalFiles.TargetPath = Views\OnboardingPage4.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\OnboardingPage4.xaml
 
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.RegisterPage.xaml
@@ -105,3 +117,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.Splashscreen1.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Splashscreen1.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Splashscreen1.xaml
+
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/VenuePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.VenuePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\VenuePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\VenuePage.xaml

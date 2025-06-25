@@ -11,25 +11,45 @@
     ColumnDefinitions="*,*,*,*">
 
         <!-- Home -->
-        <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout Grid.Column="0"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnHomeTapped" NumberOfTapsRequired="1"/>
+            </VerticalStackLayout.GestureRecognizers>
             <Image Source="iconhome" HeightRequest="24" WidthRequest="24" />
             <Label Text="Home" FontFamily="JosefinSans" FontSize="12" TextColor="White" />
         </VerticalStackLayout>
 
         <!-- Venues -->
-        <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout Grid.Column="1"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnVenuesTapped" NumberOfTapsRequired="1"/>
+            </VerticalStackLayout.GestureRecognizers>
             <Image Source="iconlocation" HeightRequest="24" WidthRequest="24" />
             <Label Text="Venues" FontFamily="JosefinSans" FontSize="12" TextColor="White" />
         </VerticalStackLayout>
 
         <!-- Info -->
-        <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout Grid.Column="2"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnInfoTapped" NumberOfTapsRequired="1"/>
+            </VerticalStackLayout.GestureRecognizers>
             <Image Source="iconquestionmark" HeightRequest="24" WidthRequest="24" />
             <Label Text="Info" FontFamily="JosefinSans" FontSize="12" TextColor="White" />
         </VerticalStackLayout>
 
         <!-- Profile -->
-        <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout Grid.Column="3"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnProfileTapped" NumberOfTapsRequired="1"/>
+            </VerticalStackLayout.GestureRecognizers>
             <Image Source="iconprofile" HeightRequest="24" WidthRequest="24" />
             <Label Text="Profile" FontFamily="JosefinSans" FontSize="12" TextColor="White" />
         </VerticalStackLayout>
