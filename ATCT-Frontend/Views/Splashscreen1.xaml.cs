@@ -9,6 +9,6 @@ public partial class Splashscreen1 : ContentPage
 
     private async void OnGetStartedClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new MainPage()); // Or replace with your next page
+        await Navigation.PushAsync(new OnboardingPage1()); // Or replace with your next page
     }
 }

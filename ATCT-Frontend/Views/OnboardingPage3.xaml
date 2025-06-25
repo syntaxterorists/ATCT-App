@@ -1,0 +1,97 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shell="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+             x:Class="ATCT_Frontend.Views.OnboardingPage3"
+             shell:Shell.NavBarIsVisible="False">
+
+    <!-- Radial background from #181646 to #FC9918 -->
+    <ContentPage.Background>
+        <RadialGradientBrush Center="0.5,0.3" Radius="1">
+            <GradientStop Color="#181646" Offset="0"/>
+            <GradientStop Color="#FC9918" Offset="1"/>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Center content shifted upward -->
+    <VerticalStackLayout Padding="20" Spacing="16" VerticalOptions="Start" HorizontalOptions="Center">
+
+        <!-- Top logo + year -->
+        <Grid HorizontalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="atctlogowhite.png"
+                   Grid.Row="0"
+                   WidthRequest="340"
+                   HeightRequest="106"
+                   Aspect="AspectFit"
+                   Margin="0,0,0,-10" />
+            <Image Source="year.png"
+                   Grid.Row="1"
+                   WidthRequest="60"
+                   HeightRequest="30"
+                   HorizontalOptions="End"
+                   Margin="0,0,0,0"
+                   Aspect="AspectFit" />
+        </Grid>
+
+        <!-- Organiser section: logos of organizers -->
+        <Label Text="Organiser:" 
+               FontFamily="JosefinSans"
+               FontSize="18"
+               TextColor="White"
+               HorizontalOptions="Start"
+               Margin="0,20,0,0" />
+        <VerticalStackLayout Spacing="15" HorizontalOptions="Start" Margin="30,10,0,0">
+            <Image Source="organizerone.png" HeightRequest="60" Aspect="AspectFit" />
+            <Image Source="organizertwo.png" HeightRequest="60" Aspect="AspectFit" />
+        </VerticalStackLayout>
+
+        <!-- Supported by section: ministry logo -->
+        <Label Text="Supported by:" 
+               FontFamily="JosefinSans"
+               FontSize="18"
+               TextColor="White"
+               HorizontalOptions="Start"
+               Margin="0,20,0,0" />
+        <Image Source="ministry.png" 
+               WidthRequest="300" HeightRequest="60" 
+               Aspect="AspectFit"
+               HorizontalOptions="Start"
+               Margin="-5,10,0,40" />
+
+        <!-- Page indicators (third filled) -->
+        <HorizontalStackLayout Spacing="8" HorizontalOptions="Center" Margin="0,42,0,-20">
+            <Image Source="opencircle.png" WidthRequest="12" HeightRequest="12" />
+            <Image Source="opencircle.png" WidthRequest="12" HeightRequest="12" />
+            <Image Source="filledcircle.png" WidthRequest="12" HeightRequest="12" />
+            <Image Source="opencircle.png" WidthRequest="12" HeightRequest="12" />
+        </HorizontalStackLayout>
+
+        <!-- Next button -->
+        <Button Text="Next"
+                FontFamily="JosefinSans"
+                BackgroundColor="#FC9918"
+                TextColor="White"
+                CornerRadius="20"
+                FontSize="18"
+                Padding="12"
+                WidthRequest="220"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"
+                Clicked="OnNextClicked" />
+
+        <!-- Back arrow below button -->
+        <Image Source="arrowicon.png"
+               WidthRequest="24"
+               HeightRequest="24"
+               HorizontalOptions="Start"
+               Margin="-7,15,0,0">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackTapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+    </VerticalStackLayout>
+</ContentPage>

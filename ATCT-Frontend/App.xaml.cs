@@ -7,8 +7,8 @@ namespace ATCT_Frontend
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new Splashscreen1());
+            MainPage = new AppShell();
         }
     }
+
 }

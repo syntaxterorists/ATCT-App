@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATCT-Frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f9d96e4f8d6609b2bdad3a1e28e4f5e83dfb2385")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9f1395c484016fe118ccee45fdb2a7bdd99a213f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATCT-Frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATCT-Frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
