@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Resources.St
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/AboutAltPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.AboutAltPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AboutAltPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AboutAltPage.xaml
+
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/AccountCreationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.AccountCreationPage.xaml
@@ -100,17 +106,35 @@ build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.Onboar
 build_metadata.AdditionalFiles.TargetPath = Views\OnboardingPage4.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\OnboardingPage4.xaml
 
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/OpeningAltAltPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.OpeningAltAltPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OpeningAltAltPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OpeningAltAltPage.xaml
+
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.ProfilePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
 
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/ProgramAltPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.ProgramAltPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProgramAltPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProgramAltPage.xaml
+
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/SpeakersAltPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.SpeakersAltPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SpeakersAltPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SpeakersAltPage.xaml
 
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/Splashscreen1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

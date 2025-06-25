@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\aboutfield.scale-100.png">
+      <PackagePath>aboutfield.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
@@ -202,6 +205,9 @@
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\atctspeaker.scale-100.png">
       <PackagePath>atctspeaker.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundgeometric.scale-100.png">
+      <PackagePath>backgroundgeometric.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\caricon.scale-100.png">
       <PackagePath>caricon.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -211,8 +217,14 @@
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\crowdtwo.scale-100.png">
       <PackagePath>crowdtwo.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\elipse.scale-100.png">
+      <PackagePath>elipse.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\filledcircle.scale-100.png">
       <PackagePath>filledcircle.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ghb.scale-100.png">
+      <PackagePath>ghb.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconhome.scale-100.png">
       <PackagePath>iconhome.scale-100.png</PackagePath>
@@ -228,6 +240,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\information.scale-100.png">
       <PackagePath>information.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\kemalmalovcic.scale-100.png">
+      <PackagePath>kemalmalovcic.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhansa.scale-100.png">
       <PackagePath>logobhansa.scale-100.png</PackagePath>
@@ -271,17 +286,32 @@
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\planeicon.scale-100.png">
       <PackagePath>planeicon.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\programfield.scale-100.png">
+      <PackagePath>programfield.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\qricon.scale-100.png">
+      <PackagePath>qricon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\smalluser.scale-100.png">
+      <PackagePath>smalluser.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spaceone.scale-100.png">
       <PackagePath>spaceone.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spacetwo.scale-100.png">
       <PackagePath>spacetwo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\speakermale.scale-100.png">
-      <PackagePath>speakermale.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\speakerfemale.scale-100.png">
+      <PackagePath>speakerfemale.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spekerfemale.scale-100.png">
-      <PackagePath>spekerfemale.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\speakersfield.scale-100.png">
+      <PackagePath>speakersfield.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spekermale.scale-100.png">
+      <PackagePath>spekermale.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png">
+      <PackagePath>user.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\wifiicon.scale-100.png">
       <PackagePath>wifiicon.scale-100.png</PackagePath>

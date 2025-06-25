@@ -4,16 +4,155 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ATCT_Frontend.Views"
-    NavigationPage.HasNavigationBar="False">
+    NavigationPage.HasNavigationBar="False"
+    BackgroundImageSource="backgroundgeometric">
 
+    <!-- 2 rows: scrollable content, bottom nav -->
     <Grid RowDefinitions="*,Auto">
 
-        <!-- 1) Scrollable main content -->
+        <!-- 1) Main scrollable area -->
         <ScrollView Grid.Row="0">
-            <!-- …your content… -->
+            <StackLayout Padding="16" Spacing="24">
+
+                <!-- a) Avatar in a visible circle frame -->
+                <AbsoluteLayout
+    HeightRequest="120"
+    WidthRequest="120"
+    HorizontalOptions="Center">
+
+                    <!-- 1) Circle border at z-index 0 -->
+                    <Frame
+    HeightRequest="120"
+    WidthRequest="120"
+    CornerRadius="60"
+    BorderColor="#EF941F"
+    BackgroundColor="Transparent"
+    Padding="0"
+    HasShadow="False"
+    AbsoluteLayout.LayoutFlags="All"
+    AbsoluteLayout.LayoutBounds="0,0,1,1"
+    ZIndex="0" />
+
+                    <!-- 2) User icon at z-index 1 -->
+                    <Image
+    Source="user"
+    Aspect="AspectFit"
+    HeightRequest="80"
+    WidthRequest="80"
+    AbsoluteLayout.LayoutFlags="All"
+    AbsoluteLayout.LayoutBounds="0.5,0.5,0.66,0.66"
+    ZIndex="1" />
+
+                </AbsoluteLayout>
+
+
+
+                <!-- b) Name & location -->
+                <Label
+          Text="John Doe"
+          FontFamily="JosefinSans"
+          FontSize="24"
+          FontAttributes="Bold"
+          TextColor="Black"
+          HorizontalOptions="Center" />
+                <Label
+          Text="Sarajevo, Bosnia and Herzegovina"
+          FontFamily="JosefinSans"
+          FontSize="14"
+          TextColor="Black"
+          HorizontalOptions="Center" />
+
+                <!-- c) Your Name -->
+                <StackLayout Spacing="4">
+                    <Label Text="Your Name" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
+                    <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
+                        <Entry Text="John" IsEnabled="False" BackgroundColor="Transparent" />
+                    </Frame>
+                </StackLayout>
+
+                <!-- d) Last name -->
+                <StackLayout Spacing="4">
+                    <Label Text="Last name" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
+                    <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
+                        <Entry Text="Doe" IsEnabled="False" BackgroundColor="Transparent" />
+                    </Frame>
+                </StackLayout>
+
+                <!-- e) Location -->
+                <StackLayout Spacing="4">
+                    <Label Text="Location" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
+                    <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
+                        <Entry
+              Text="Sarajevo, Bosnia and Herzegovina"
+              IsEnabled="False"
+              BackgroundColor="Transparent" />
+                    </Frame>
+                </StackLayout>
+
+                <!-- f) Email -->
+                <StackLayout Spacing="4">
+                    <Label Text="Your Email" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
+                    <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
+                        <Entry
+              Text="johndoe@hotmail.com"
+              IsEnabled="False"
+              Keyboard="Email"
+              BackgroundColor="Transparent" />
+                    </Frame>
+                </StackLayout>
+
+                <!-- g) Password + eye toggle -->
+                <StackLayout Spacing="4">
+                    <Label Text="Password" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
+                    <Grid>
+                        <Entry
+              x:Name="PasswordEntry"
+              Text="********************************"
+              IsPassword="True"
+              BackgroundColor="White"
+              FontFamily="JosefinSans"
+              TextColor="Black"
+              HeightRequest="40"
+              VerticalOptions="Center" />
+                        <Image
+              Source="eyeicon"
+              HeightRequest="24"
+              WidthRequest="24"
+              HorizontalOptions="End"
+              VerticalOptions="Center"
+              Margin="0,0,12,0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnEyeTapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                </StackLayout>
+
+                <!-- h) QR‐scan button at bottom of scroll -->
+                <Frame
+          HeightRequest="120"
+          WidthRequest="120"
+          CornerRadius="60"
+          BorderColor="#EF941F"
+          BackgroundColor="Transparent"
+          HorizontalOptions="Center"
+          Padding="0"
+          Margin="0,24,0,0">
+                    <Image
+            Source="qricon"
+            Aspect="AspectFit"
+            HeightRequest="60"
+            WidthRequest="80">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnQrTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+            </StackLayout>
         </ScrollView>
 
-        <!-- 2) Locked bottom nav bar -->
+        <!-- 2) Bottom nav bar pinned -->
         <views:BottomNavBar Grid.Row="1" />
 
     </Grid>

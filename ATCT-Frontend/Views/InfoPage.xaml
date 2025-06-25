@@ -4,17 +4,80 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ATCT_Frontend.Views"
-    NavigationPage.HasNavigationBar="False">
+    NavigationPage.HasNavigationBar="False"
+    BackgroundImageSource="backgroundgeometric">
 
-    <Grid RowDefinitions="*,Auto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-        <!-- 1) Scrollable main content -->
+        <!-- Scrollable content -->
         <ScrollView Grid.Row="0">
-            <!-- …your content… -->
+            <StackLayout Padding="16" Spacing="20">
+
+                <!-- ATCT logo -->
+                <Image
+          Source="atctlogocolorful"
+          HeightRequest="120"
+          HorizontalOptions="Center" />
+
+                <!-- About tile -->
+                <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          Padding="0"
+          Margin="0,8,0,0">
+                    <Image
+            Source="aboutfield"
+            Aspect="AspectFill"
+            HeightRequest="150"
+            HorizontalOptions="FillAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnAboutTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Program tile -->
+                <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          Padding="0"
+          Margin="0,8,0,0">
+                    <Image
+            Source="programfield"
+            Aspect="AspectFill"
+            HeightRequest="150"
+            HorizontalOptions="FillAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProgramTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Speakers tile -->
+                <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          Padding="0"
+          Margin="0,8,0,0">
+                    <Image
+            Source="speakersfield"
+            Aspect="AspectFill"
+            HeightRequest="150"
+            HorizontalOptions="FillAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSpeakersTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+            </StackLayout>
         </ScrollView>
 
-        <!-- 2) Locked bottom nav bar -->
+        <!-- Bottom nav bar pinned -->
         <views:BottomNavBar Grid.Row="1" />
-
     </Grid>
 </ContentPage>

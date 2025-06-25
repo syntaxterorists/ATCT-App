@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ATCT_Frontend.Views.OpeningAltAltPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ATCT_Frontend.Views"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundImageSource="backgroundgeometric">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"    />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <HorizontalStackLayout
+      Grid.Row="0"
+      Padding="16,16,16,0"
+      Spacing="16"
+      VerticalOptions="Start">
+            <Image
+        Source="arrowicon"
+        HeightRequest="32"
+        WidthRequest="32">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBackTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <VerticalStackLayout Spacing="4">
+                <Label
+          Text="Opening"
+          FontFamily="JosefinSans"
+          FontSize="24"
+          FontAttributes="Bold"
+          TextColor="Black" />
+                <BoxView
+          Color="#FCA028"
+          HeightRequest="4"
+          WidthRequest="60"
+          HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <!-- Scrollable content -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="16" Spacing="20">
+
+                <!-- Session header -->
+                <Grid ColumnDefinitions="*,Auto,Auto" RowSpacing="4">
+                    <Label Grid.Column="0"
+                 Text="Opening"
+                 FontFamily="JosefinSans"
+                 FontSize="22"
+                 FontAttributes="Bold"
+                 TextColor="#181646" />
+                    <Label Grid.Column="1"
+                 Text="10/100"
+                 FontFamily="JosefinSans"
+                 FontSize="14"
+                 TextColor="#181646"
+                 VerticalOptions="Center"
+                 Margin="0,0,8,0" />
+                    <Image Grid.Column="2"
+                 Source="smalluser"
+                 HeightRequest="20"
+                 WidthRequest="20"
+                 VerticalOptions="Center" />
+                </Grid>
+
+                <!-- Time -->
+                <Label
+          Text="08:00"
+          FontFamily="JosefinSans"
+          FontSize="18"
+          TextColor="#181646" />
+
+                <!-- Description -->
+                <Label
+          Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat semper ultricies. Lorem ipsum dolor sit amet, consectetur."
+          FontFamily="JosefinSans"
+          FontSize="14"
+          TextColor="Black"
+          LineBreakMode="WordWrap" />
+
+                <!-- See more… -->
+                <Label
+          Text="See more…"
+          FontFamily="JosefinSans"
+          FontSize="14"
+          TextColor="#181646" />
+
+                <!-- Speaker panel now using a Grid instead of WidthRequest="*" -->
+                <Grid ColumnDefinitions="Auto, *" RowSpacing="0">
+                    <!-- Speaker photo -->
+                    <Image
+            Source="kemalmalovcic"
+            Aspect="AspectFill"
+            HeightRequest="120"
+            WidthRequest="100"
+            VerticalOptions="Center" />
+                    <!-- Info box offset over the image -->
+                    <Frame
+            Grid.Column="1"
+            CornerRadius="12"
+            BackgroundColor="#FCA028"
+            HasShadow="False"
+            Padding="12"
+            Margin="-20,0,0,0"
+            VerticalOptions="Center">
+                        <StackLayout Spacing="4">
+                            <Label
+                Text="Kemal Malovčić"
+                FontFamily="JosefinSans"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="White" />
+                            <Label
+                Text="Dipl. in. težga i kafana, svjetski prvak u pogađanju oktava"
+                FontFamily="JosefinSans"
+                FontSize="14"
+                TextColor="White"
+                LineBreakMode="WordWrap" />
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- See more… -->
+                <Label
+          Text="See more…"
+          FontFamily="JosefinSans"
+          FontSize="14"
+          TextColor="#181646" />
+
+                <!-- Buttons -->
+                <HorizontalStackLayout Spacing="16" HorizontalOptions="Center">
+                    <Button
+            Text="Attend"
+            FontFamily="JosefinSans"
+            BackgroundColor="#FCA028"
+            TextColor="White"
+            CornerRadius="20"
+            Padding="12,8" />
+                    <Button
+            Text="Feedback"
+            FontFamily="JosefinSans"
+            BackgroundColor="#FCA028"
+            TextColor="White"
+            CornerRadius="20"
+            Padding="12,8" />
+                </HorizontalStackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Bottom nav bar -->
+        <views:BottomNavBar Grid.Row="2" />
+    </Grid>
+</ContentPage>

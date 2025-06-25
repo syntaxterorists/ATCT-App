@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ATCT_Frontend.Views.ProgramAltPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ATCT_Frontend.Views"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundImageSource="backgroundgeometric">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <HorizontalStackLayout
+      Grid.Row="0"
+      Padding="16,16,16,0"
+      Spacing="16"
+      VerticalOptions="Start">
+            <Image
+        Source="arrowicon"
+        HeightRequest="32"
+        WidthRequest="32">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBackTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <VerticalStackLayout Spacing="4">
+                <Label
+          Text="Program"
+          FontFamily="JosefinSans"
+          FontSize="24"
+          FontAttributes="Bold"
+          TextColor="Black" />
+                <BoxView
+          Color="#FCA028"
+          HeightRequest="4"
+          WidthRequest="60"
+          HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <!-- Content -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="16" Spacing="16">
+
+                <!-- 08:00 Opening (nav to OpeningAltAltPage) -->
+                <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          BackgroundColor="#181646"
+          Padding="12">
+                    <StackLayout>
+                        <Label
+              Text="08:00"
+              FontFamily="JosefinSans"
+              FontSize="18"
+              TextColor="White" />
+                        <Label
+              Text="Opening"
+              FontFamily="JosefinSans"
+              FontSize="18"
+              TextColor="White" />
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnOpeningTapped" NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- 09:00 Introduction speech -->
+                <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          BackgroundColor="#FCA028"
+          Padding="12">
+                    <Grid ColumnDefinitions="*,Auto" RowSpacing="4">
+                        <Label
+              Grid.Column="0"
+              Text="09:00 Introduction speech"
+              FontFamily="JosefinSans"
+              FontSize="18"
+              TextColor="White" />
+                        <Label
+              Grid.Column="1"
+              Text="→"
+              FontFamily="JosefinSans"
+              FontSize="24"
+              TextColor="White"
+              VerticalOptions="Center" />
+                    </Grid>
+                </Frame>
+
+                <!-- 10:30 Speaker 2 -->
+                <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          BackgroundColor="#FCA028"
+          Padding="12">
+                    <Grid ColumnDefinitions="*,Auto" RowSpacing="4">
+                        <Label
+              Grid.Column="0"
+              Text="10:30 Speaker 2"
+              FontFamily="JosefinSans"
+              FontSize="18"
+              TextColor="White" />
+                        <Label
+              Grid.Column="1"
+              Text="→"
+              FontFamily="JosefinSans"
+              FontSize="24"
+              TextColor="White"
+              VerticalOptions="Center" />
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Bottom nav -->
+        <views:BottomNavBar Grid.Row="2" />
+    </Grid>
+</ContentPage>

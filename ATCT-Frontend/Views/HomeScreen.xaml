@@ -4,17 +4,166 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ATCT_Frontend.Views"
-    NavigationPage.HasNavigationBar="False">
+    NavigationPage.HasNavigationBar="False"
+    BackgroundImageSource="backgroundgeometric">
 
     <Grid RowDefinitions="*,Auto">
 
-        <!-- 1) Scrollable main content -->
+        <!-- Scrollable main content -->
         <ScrollView Grid.Row="0">
-            <!-- …your content… -->
-            
+            <StackLayout Padding="16" Spacing="24">
+
+                <!-- 1) ATCT 2025 logo (enlarged) -->
+                <Image 
+          Source="atctlogocolorful" 
+          HeightRequest="120" 
+          HorizontalOptions="Center" />
+
+                <!-- 2) Welcome text (black) -->
+                <Label
+          Text="Welcome to the ATCT 2025 conference app!"
+          FontAttributes="Bold"
+          FontFamily="JosefinSans"
+          FontSize="20"
+          TextColor="Black"
+          HorizontalTextAlignment="Center"
+          LineHeight="1.2" />
+
+                <!-- 3) Stats grid -->
+                <Grid ColumnDefinitions="Auto,*" RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- 20+ speakers (icon enlarged)-->
+                    <Image Grid.Row="0" Source="atctspeaker" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="0" Grid.Column="1"
+                 Text="20+ speakers"
+                 FontFamily="JosefinSans"
+                 FontSize="16"
+                 TextColor="Black"
+                 VerticalOptions="Center" />
+
+                    <!-- 300+ participants -->
+                    <Image Grid.Row="1" Source="atctparticipants" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="1" Grid.Column="1"
+                 Text="300+ participants"
+                 FontFamily="JosefinSans"
+                 FontSize="16"
+                 TextColor="Black"
+                 VerticalOptions="Center" />
+
+                    <!-- 90+ authors -->
+                    <Image Grid.Row="2" Source="atctauthor" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="2" Grid.Column="1"
+                 Text="90+ authors"
+                 FontFamily="JosefinSans"
+                 FontSize="16"
+                 TextColor="Black"
+                 VerticalOptions="Center" />
+
+                    <!-- 50+ papers -->
+                    <Image Grid.Row="3" Source="atctpaper" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="3" Grid.Column="1"
+                 Text="50+ papers"
+                 FontFamily="JosefinSans"
+                 FontSize="16"
+                 TextColor="Black"
+                 VerticalOptions="Center" />
+                </Grid>
+
+                <!-- 4) Who should attend? -->
+                <Label
+          Text="Who should attend?"
+          FontFamily="JosefinSans"
+          FontSize="18"
+          FontAttributes="Bold"
+          TextColor="Black"
+          Margin="0,16,0,8" />
+
+                <Grid ColumnDefinitions="Auto,*" RowSpacing="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Traffic & comm experts -->
+                    <Image Grid.Row="0" Source="atcticoncpu" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="0" Grid.Column="1"
+                 Text="Traffic and communications experts and academic community members"
+                 FontFamily="JosefinSans"
+                 FontSize="14"
+                 TextColor="Black" />
+
+                    <!-- Company reps -->
+                    <Image Grid.Row="1" Source="atctparticipants" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="1" Grid.Column="1"
+                 Text="Company representatives from Bosnia and Herzegovina, the region, and Europe."
+                 FontFamily="JosefinSans"
+                 FontSize="14"
+                 TextColor="Black" />
+
+                    <!-- Innovative companies -->
+                    <Image Grid.Row="2" Source="atctspeaker" HeightRequest="36" WidthRequest="36" />
+                    <Label Grid.Row="2" Grid.Column="1"
+                 Text="Innovative companies in Bosnia and Herzegovina seeking new business cooperation."
+                 FontFamily="JosefinSans"
+                 FontSize="14"
+                 TextColor="Black" />
+                </Grid>
+
+                <!-- 5) Speakers list -->
+                <Label
+          Text="Speakers:"
+          FontFamily="JosefinSans"
+          FontSize="18"
+          FontAttributes="Bold"
+          TextColor="Black"
+          Margin="0,16,0,8" />
+
+                <StackLayout Spacing="16">
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakerfemale" HeightRequest="36" WidthRequest="36" />
+                        <Label Text="Speaker #1"
+                   FontFamily="JosefinSans"
+                   FontSize="14"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakermale" HeightRequest="36" WidthRequest="36" />
+                        <Label Text="Speaker #2"
+                   FontFamily="JosefinSans"
+                   FontSize="14"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakerfemale" HeightRequest="36" WidthRequest="36" />
+                        <Label Text="Speaker #3"
+                   FontFamily="JosefinSans"
+                   FontSize="14"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakermale" HeightRequest="36" WidthRequest="36" />
+                        <Label Text="Speaker #4"
+                   FontFamily="JosefinSans"
+                   FontSize="14"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
         </ScrollView>
 
-        <!-- 2) Locked bottom nav bar -->
+        <!-- Locked bottom nav bar -->
         <views:BottomNavBar Grid.Row="1" />
 
     </Grid>

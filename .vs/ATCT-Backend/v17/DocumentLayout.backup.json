@@ -3,20 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\homescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\homescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\openingaltaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\openingaltaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\openingaltaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\openingaltaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\speakersaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\speakersaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\speakersaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\speakersaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\aboutaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\aboutaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\programaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\programaltpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\programaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\programaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\infopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\infopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\aboutaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\aboutaltpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\infopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\infopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\venuepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\venuepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\venuepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\venuepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\homescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\homescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\bottomnavbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,18 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\homescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\homescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\infopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\infopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\views\\venuepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|solutionrelative:atct-frontend\\views\\venuepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60DEE046-17F0-4FAC-A126-DAC9E80B0EEC}|ATCT-Frontend\\ATCT-Frontend.csproj|c:\\users\\pc\\documents\\github\\atct-app\\atct-frontend\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,86 +162,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "OpeningAltAltPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OpeningAltAltPage.xaml.cs",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OpeningAltAltPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OpeningAltAltPage.xaml.cs",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\OpeningAltAltPage.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T21:10:15.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpeningAltAltPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OpeningAltAltPage.xaml",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OpeningAltAltPage.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OpeningAltAltPage.xaml",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\OpeningAltAltPage.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-25T21:10:10.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpeakersAltPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\SpeakersAltPage.xaml.cs",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\SpeakersAltPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\SpeakersAltPage.xaml.cs",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\SpeakersAltPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:58:13.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpeakersAltPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\SpeakersAltPage.xaml",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\SpeakersAltPage.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\SpeakersAltPage.xaml",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\SpeakersAltPage.xaml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAhwE0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-25T20:58:11.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProgramAltPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProgramAltPage.xaml.cs",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\ProgramAltPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProgramAltPage.xaml.cs",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\ProgramAltPage.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:57:54.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProgramAltPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProgramAltPage.xaml",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\ProgramAltPage.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProgramAltPage.xaml",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\ProgramAltPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-25T20:57:53.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AboutAltPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\AboutAltPage.xaml.cs",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\AboutAltPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\AboutAltPage.xaml.cs",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\AboutAltPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:57:44.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutAltPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\AboutAltPage.xaml",
+              "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\AboutAltPage.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\AboutAltPage.xaml",
+              "RelativeToolTip": "ATCT-Frontend\\Views\\AboutAltPage.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAADwv1YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-25T20:57:24.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ProfilePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\ProfilePage.xaml.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProfilePage.xaml.cs",
               "RelativeToolTip": "ATCT-Frontend\\Views\\ProfilePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T18:17:09.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "ProfilePage.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProfilePage.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\ProfilePage.xaml",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\ProfilePage.xaml",
               "RelativeToolTip": "ATCT-Frontend\\Views\\ProfilePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwI8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T18:17:06.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T18:17:06.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "InfoPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\InfoPage.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\InfoPage.xaml.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\InfoPage.xaml.cs",
               "RelativeToolTip": "ATCT-Frontend\\Views\\InfoPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T18:16:44.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "InfoPage.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\InfoPage.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\InfoPage.xaml",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\InfoPage.xaml",
               "RelativeToolTip": "ATCT-Frontend\\Views\\InfoPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T18:16:21.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T18:16:21.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "VenuePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\VenuePage.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\VenuePage.xaml.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\VenuePage.xaml.cs",
               "RelativeToolTip": "ATCT-Frontend\\Views\\VenuePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T18:16:29.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "VenuePage.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\VenuePage.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\VenuePage.xaml",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\VenuePage.xaml",
               "RelativeToolTip": "ATCT-Frontend\\Views\\VenuePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T18:15:58.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T18:15:58.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "BottomNavBar.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\BottomNavBar.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\BottomNavBar.xaml.cs",
@@ -217,12 +369,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\BottomNavBar.xaml.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T17:54:46.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T17:54:46.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "BottomNavBar.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\BottomNavBar.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\BottomNavBar.xaml",
@@ -230,12 +381,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\BottomNavBar.xaml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T17:50:42.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T17:50:42.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "HomeScreen.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\HomeScreen.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\HomeScreen.xaml.cs",
@@ -247,20 +397,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "HomeScreen.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\HomeScreen.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\HomeScreen.xaml",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\HomeScreen.xaml",
               "RelativeToolTip": "ATCT-Frontend\\Views\\HomeScreen.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T17:41:19.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T17:41:19.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\RegisterPage.xaml.cs",
@@ -272,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "RegisterPage.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\RegisterPage.xaml",
@@ -280,12 +429,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\RegisterPage.xaml",
               "ViewState": "AgIAAGYAAAAAAAAAAAAUwD0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T16:04:41.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T16:04:41.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\LoginPage.xaml.cs",
@@ -297,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\LoginPage.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\LoginPage.xaml",
@@ -305,12 +453,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\LoginPage.xaml",
               "ViewState": "AgIAAIYAAAAAAAAAAAAAAJEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T15:53:31.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T15:53:31.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "AccountCreationPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\AccountCreationPage.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\AccountCreationPage.xaml.cs",
@@ -322,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\App.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\App.xaml",
@@ -334,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "AccountCreationPage.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\AccountCreationPage.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\AccountCreationPage.xaml",
@@ -342,12 +489,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\AccountCreationPage.xaml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAFEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T15:20:02.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T15:20:02.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Splashscreen1.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\Splashscreen1.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\Splashscreen1.xaml.cs",
@@ -359,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Splashscreen1.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\Splashscreen1.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\Splashscreen1.xaml",
@@ -367,12 +513,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\Splashscreen1.xaml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-24T17:32:15.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T17:32:15.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "OnboardingPage4.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage4.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage4.xaml.cs",
@@ -384,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "OnboardingPage4.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage4.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage4.xaml",
@@ -392,12 +537,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\OnboardingPage4.xaml",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAAFEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T12:08:45.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T12:08:45.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "OnboardingPage3.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage3.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage3.xaml.cs",
@@ -409,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "OnboardingPage3.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage3.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage3.xaml",
@@ -417,12 +561,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\OnboardingPage3.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T11:23:08.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T11:23:08.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "OnboardingPage2.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage2.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage2.xaml",
@@ -430,12 +573,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\OnboardingPage2.xaml",
               "ViewState": "AgIAAEAAAAAAAAAAAAAUwEcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T10:41:02.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T10:41:02.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "OnboardingPage2.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage2.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage2.xaml.cs",
@@ -447,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "OnboardingPage1.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage1.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage1.xaml",
@@ -455,12 +597,11 @@
               "RelativeToolTip": "ATCT-Frontend\\Views\\OnboardingPage1.xaml",
               "ViewState": "AgIAAEAAAAAAAAAAAAAAwEcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-25T09:49:37.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T09:49:37.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "OnboardingPage1.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\Views\\OnboardingPage1.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\Views\\OnboardingPage1.xaml.cs",
@@ -472,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\AppShell.xaml.cs",
@@ -484,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\AppShell.xaml",
               "RelativeDocumentMoniker": "ATCT-Frontend\\AppShell.xaml",
@@ -496,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\MauiProgram.cs",
               "RelativeDocumentMoniker": "ATCT-Frontend\\MauiProgram.cs",
