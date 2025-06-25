@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ATCT_Frontend.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:shell="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+    shell:Shell.NavBarIsVisible="False">
+
+    <!-- Radial gradient background -->
+    <ContentPage.Background>
+        <RadialGradientBrush Center="0,0" Radius="1">
+            <GradientStop Color="#FCA028" Offset="0.24" />
+            <GradientStop Color="#C46F00" Offset="0.44" />
+            <GradientStop Color="#181646" Offset="0.84" />
+            <GradientStop Color="#02002B" Offset="0.97" />
+        </RadialGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- back arrow -->
+            <RowDefinition Height="Auto"/>
+            <!-- logo -->
+            <RowDefinition Height="Auto"/>
+            <!-- title -->
+            <RowDefinition Height="Auto"/>
+            <!-- subtitle -->
+            <RowDefinition Height="Auto"/>
+            <!-- name field -->
+            <RowDefinition Height="Auto"/>
+            <!-- e-mail field -->
+            <RowDefinition Height="Auto"/>
+            <!-- sign-in button -->
+            <RowDefinition Height="*"   />
+            <!-- filler -->
+            <RowDefinition Height="Auto"/>
+            <!-- info icon -->
+        </Grid.RowDefinitions>
+        <!-- top space iamge -->
+
+        <Image Source="spacetwo.png"
+         Aspect="Fill"
+         HeightRequest="140"
+         WidthRequest="385"
+         HorizontalOptions="Start"
+         VerticalOptions="Start"
+         Margin="0,-3,10,0"
+         Grid.Row="0"/>
+        <!-- 1) Back arrow -->
+        <Image
+      Grid.Row="0"
+      Source="arrowicon"
+      HeightRequest="32"
+      WidthRequest="32"
+      Margin="16,30,0,0"
+      HorizontalOptions="Start"
+      VerticalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackTapped" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <!-- 2) ATCT logo, slightly smaller & up -->
+        <Image
+      Grid.Row="1"
+      Source="atctlogowhite"
+      HeightRequest="80"
+      WidthRequest="80"
+      Margin="0,20,0,8"
+      HorizontalOptions="Center" />
+
+        <!-- 3) Page title -->
+        <Label
+      Grid.Row="2"
+      Text="Sign in"
+      FontFamily="JosefinSans"
+      FontSize="28"
+      FontAttributes="Bold"
+      TextColor="White"
+      HorizontalOptions="Center" />
+
+        <!-- 4) Subtitle -->
+        <Label
+      Grid.Row="3"
+      Text="Already have an account? Sign in"
+      FontFamily="JosefinSans"
+      FontSize="16"
+      TextColor="White"
+      HorizontalOptions="Center"
+      Margin="0,4,0,20" />
+
+        <!-- 5) Name field -->
+        <StackLayout
+      Grid.Row="4"
+      Spacing="4"
+      Padding="32,0">
+            <Label
+        Text="Name:"
+        FontFamily="JosefinSans"
+        TextColor="White" />
+            <Frame
+        BackgroundColor="#F8F3F3"
+        CornerRadius="20"
+        HasShadow="False"
+        Padding="12">
+                <Entry
+          Text="{Binding Name}"
+          Placeholder="John Doe"
+          TextColor="Black"
+          BackgroundColor="Transparent" />
+            </Frame>
+        </StackLayout>
+
+        <!-- 6) E-mail field -->
+        <StackLayout
+      Grid.Row="5"
+      Spacing="4"
+      Padding="32,12,32,0">
+            <Label
+        Text="E-mail:"
+        FontFamily="JosefinSans"
+        TextColor="White" />
+            <Frame
+        BackgroundColor="#F8F3F3"
+        CornerRadius="20"
+        HasShadow="False"
+        Padding="12">
+                <Entry
+          Text="{Binding Email}"
+          Placeholder="johndoe@outlook.com"
+          Keyboard="Email"
+          TextColor="Black"
+          BackgroundColor="Transparent" />
+            </Frame>
+        </StackLayout>
+
+        <!-- 7) Sign in button -->
+        <Button
+      Grid.Row="6"
+      Text="Sign in"
+      Style="{StaticResource OutlineButtonStyle}"
+      FontAttributes="Bold"
+      Command="{Binding SignInCommand}"
+      Margin="32,24" />
+
+        <!-- 8) Spacer automatically fills -->
+
+        <!-- 9) Info icon at bottom -->
+        <Image
+      Grid.Row="8"
+      Source="information"
+      HeightRequest="24"
+      WidthRequest="24"
+      HorizontalOptions="Center"
+      Margin="0,0,0,24" />
+    </Grid>
+</ContentPage>

@@ -79,7 +79,7 @@
                 WidthRequest="220"
                 HorizontalOptions="Center"
                 Margin="0,0,0,0"
-                 />
+                Clicked="OnNextClicked"/>
 
         <!-- Back arrow below button -->
         <Image Source="arrowicon.png"

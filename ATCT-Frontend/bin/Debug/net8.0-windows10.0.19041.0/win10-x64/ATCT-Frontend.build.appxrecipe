@@ -64,65 +64,32 @@
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\planeicon.scale-100.png">
-      <PackagePath>planeicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoeuroasfalt.scale-100.png">
-      <PackagePath>logoeuroasfalt.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhansa.scale-100.png">
-      <PackagePath>logobhansa.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spaceone.scale-100.png">
-      <PackagePath>spaceone.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoporsche.scale-100.png">
-      <PackagePath>logoporsche.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhtelecom.scale-100.png">
-      <PackagePath>logobhtelecom.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spacetwo.scale-100.png">
       <PackagePath>spacetwo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoppg.scale-100.png">
-      <PackagePath>logoppg.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\atctlogowhite.scale-100.png">
-      <PackagePath>atctlogowhite.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\year.scale-100.png">
-      <PackagePath>year.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logosarajevo.scale-100.png">
-      <PackagePath>logosarajevo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobstelecom.scale-100.png">
       <PackagePath>logobstelecom.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\wifiicon.scale-100.png">
-      <PackagePath>wifiicon.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhposta.scale-100.png">
+      <PackagePath>logobhposta.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ministry.scale-100.png">
-      <PackagePath>ministry.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoeuroasfalt.scale-100.png">
+      <PackagePath>logoeuroasfalt.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\atctlogowhite.scale-100.png">
+      <PackagePath>atctlogowhite.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoporsche.scale-100.png">
+      <PackagePath>logoporsche.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\caricon.scale-100.png">
       <PackagePath>caricon.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\opencircle.scale-100.png">
-      <PackagePath>opencircle.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spaceone.scale-100.png">
+      <PackagePath>spaceone.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhposta.scale-100.png">
-      <PackagePath>logobhposta.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\organizerone.scale-100.png">
-      <PackagePath>organizerone.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobrzaposta.scale-100.png">
-      <PackagePath>logobrzaposta.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\organizertwo.scale-100.png">
-      <PackagePath>organizertwo.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoppg.scale-100.png">
+      <PackagePath>logoppg.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\filledcircle.scale-100.png">
       <PackagePath>filledcircle.scale-100.png</PackagePath>
@@ -265,14 +232,50 @@
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logosarajevo.scale-100.png">
+      <PackagePath>logosarajevo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobrzaposta.scale-100.png">
+      <PackagePath>logobrzaposta.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ministry.scale-100.png">
+      <PackagePath>ministry.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhtelecom.scale-100.png">
+      <PackagePath>logobhtelecom.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\planeicon.scale-100.png">
+      <PackagePath>planeicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\opencircle.scale-100.png">
+      <PackagePath>opencircle.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\information.scale-100.png">
+      <PackagePath>information.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\organizerone.scale-100.png">
+      <PackagePath>organizerone.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logobhansa.scale-100.png">
+      <PackagePath>logobhansa.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\organizertwo.scale-100.png">
+      <PackagePath>organizertwo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\crowdone.scale-100.png">
       <PackagePath>crowdone.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\crowdtwo.scale-100.png">
-      <PackagePath>crowdtwo.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\wifiicon.scale-100.png">
+      <PackagePath>wifiicon.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrowicon.scale-100.png">
       <PackagePath>arrowicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\year.scale-100.png">
+      <PackagePath>year.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\crowdtwo.scale-100.png">
+      <PackagePath>crowdtwo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\Documents\GitHub\ATCT-App\ATCT-Frontend\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>

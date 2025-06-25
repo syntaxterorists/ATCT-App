@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ATCT_Frontend.Views.AccountCreationPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:shell="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+    shell:Shell.NavBarIsVisible="False">
+
+    <!-- Radial gradient background -->
+    <ContentPage.Background>
+        <RadialGradientBrush Center="0,0" Radius="1">
+            <GradientStop Color="#FCA028" Offset="0.24" />
+            <GradientStop Color="#C46F00" Offset="0.44" />
+            <GradientStop Color="#181646" Offset="0.84" />
+            <GradientStop Color="#02002B" Offset="0.97" />
+        </RadialGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <!-- Define 6 rows for precise control -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- back arrow -->
+            <RowDefinition Height="2*"/>
+            <!-- logo -->
+            <RowDefinition Height="Auto"/>
+            <!-- headline -->
+            <RowDefinition Height="Auto"/>
+            <!-- buttons -->
+            <RowDefinition Height="*"/>
+            <!-- filler -->
+            <RowDefinition Height="Auto"/>
+            <!-- info icon -->
+        </Grid.RowDefinitions>
+
+        <!-- 1) Back arrow -->
+        <Image
+      Grid.Row="0"
+      Source="arrowicon.png"
+      HeightRequest="32"
+      WidthRequest="32"
+      Margin="16,30,0,0"
+      HorizontalOptions="Start"
+      VerticalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackTapped" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <!-- 2) ATCT logo, much bigger -->
+        <Image
+      Grid.Row="1"
+      Source="atctlogowhite"
+      HeightRequest="500"
+      WidthRequest="300"
+      HorizontalOptions="Center"
+      VerticalOptions="Start" 
+      Margin="0,-150,0,0"/>
+
+        <!-- 3) Headline, wrapped & centered -->
+        <Label
+      Grid.Row="2"
+      Text="Welcome to the official ATCT app!"
+      FontFamily="JosefinSans"
+      FontSize="26"
+      FontAttributes="Bold"
+      LineHeight="1.2"
+      HorizontalTextAlignment="Center"
+      TextColor="White"
+      Margin="32,-150,32,0" />
+
+        <!-- 4) Buttons -->
+        <StackLayout
+      Grid.Row="3"
+      Orientation="Vertical"
+      Spacing="16"
+      Margin="32,20,32,0">
+            <Button
+        Text="Register"
+        Style="{StaticResource OutlineButtonStyle}"
+        Command="{Binding RegisterCommand}" 
+        Clicked="OnRegisterClicked"/>
+            <Button
+        Text="Sign in"
+        Style="{StaticResource OutlineButtonStyle}"
+        Command="{Binding SignInCommand}" 
+        Clicked="OnSignInClicked" />
+        </StackLayout>
+
+        <!-- 5) Info icon pinned at bottom -->
+        <Image
+      Grid.Row="5"
+      Source="information"
+      HeightRequest="24"
+      WidthRequest="24"
+      HorizontalOptions="Center"
+      Margin="0,0,0,24" />
+    </Grid>
+</ContentPage>
