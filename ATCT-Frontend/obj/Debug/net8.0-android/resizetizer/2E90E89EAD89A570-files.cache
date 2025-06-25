@@ -4,6 +4,10 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\caricon.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\crowdone.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\crowdtwo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\filledcircle.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\iconhome.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\iconlocation.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\iconprofile.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\iconquestionmark.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\information.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logobhansa.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logobhposta.png

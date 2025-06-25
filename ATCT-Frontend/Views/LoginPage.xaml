@@ -142,7 +142,8 @@
       Style="{StaticResource OutlineButtonStyle}"
       FontAttributes="Bold"
       Command="{Binding SignInCommand}"
-      Margin="32,24" />
+      Margin="32,24" 
+      Clicked="OnSignInClicked"/>
 
         <!-- 8) Spacer automatically fills -->
 

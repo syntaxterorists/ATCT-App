@@ -48,6 +48,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.Accoun
 build_metadata.AdditionalFiles.TargetPath = Views\AccountCreationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AccountCreationPage.xaml
 
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/BottomNavBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.BottomNavBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BottomNavBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BottomNavBar.xaml
+
+[C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/HomeScreen.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.HomeScreen.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomeScreen.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomeScreen.xaml
+
 [C:/Users/PC/Documents/GitHub/ATCT-App/ATCT-Frontend/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ATCT_Frontend.Views.LoginPage.xaml

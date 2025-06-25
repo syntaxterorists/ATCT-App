@@ -23,7 +23,7 @@ namespace ATCT_Frontend.Views
         {
             await this.FadeTo(0, 10);
             // after registering, go to the login screen
-            await Navigation.PushAsync(new LoginPage(), animated: false);
+            await Navigation.PushAsync(new HomeScreen(), animated: false);
             this.Opacity = 1;
         }
     }
