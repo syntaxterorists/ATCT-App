@@ -90,48 +90,19 @@
       HorizontalOptions="Center"
       Margin="0,4,0,20" />
 
-        <!-- 5) Name field -->
-        <StackLayout
-      Grid.Row="4"
-      Spacing="4"
-      Padding="32,0">
-            <Label
-        Text="Name:"
-        FontFamily="JosefinSans"
-        TextColor="White" />
-            <Frame
-        BackgroundColor="#F8F3F3"
-        CornerRadius="20"
-        HasShadow="False"
-        Padding="12">
-                <Entry
-          Text="{Binding Name}"
-          Placeholder="John Doe"
-          TextColor="Black"
-          BackgroundColor="Transparent" />
+        <!-- 5) E-mail field -->
+        <StackLayout Grid.Row="4" Spacing="4" Padding="32,0">
+            <Label Text="Email:" FontFamily="JosefinSans" TextColor="White" />
+            <Frame BackgroundColor="#F8F3F3" CornerRadius="20" HasShadow="False" Padding="12">
+                <Entry Text="{Binding Email}" Placeholder="johndoe@outlook.com" Keyboard="Email" TextColor="Black" BackgroundColor="Transparent" />
             </Frame>
         </StackLayout>
 
-        <!-- 6) E-mail field -->
-        <StackLayout
-      Grid.Row="5"
-      Spacing="4"
-      Padding="32,12,32,0">
-            <Label
-        Text="E-mail:"
-        FontFamily="JosefinSans"
-        TextColor="White" />
-            <Frame
-        BackgroundColor="#F8F3F3"
-        CornerRadius="20"
-        HasShadow="False"
-        Padding="12">
-                <Entry
-          Text="{Binding Email}"
-          Placeholder="johndoe@outlook.com"
-          Keyboard="Email"
-          TextColor="Black"
-          BackgroundColor="Transparent" />
+        <!-- 6) Password field -->
+        <StackLayout Grid.Row="5" Spacing="4" Padding="32,12,32,0">
+            <Label Text="Password:" FontFamily="JosefinSans" TextColor="White" />
+            <Frame BackgroundColor="#F8F3F3" CornerRadius="20" HasShadow="False" Padding="12">
+                <Entry Text="{Binding Password}" Placeholder="********" IsPassword="True" TextColor="Black" BackgroundColor="Transparent" />
             </Frame>
         </StackLayout>
 

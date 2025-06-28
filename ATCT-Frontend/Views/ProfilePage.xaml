@@ -49,7 +49,7 @@
 
                 <!-- b) Name & location -->
                 <Label
-          Text="John Doe"
+          Text="{Binding FullName}"
           FontFamily="JosefinSans"
           FontSize="24"
           FontAttributes="Bold"
@@ -66,26 +66,17 @@
                 <StackLayout Spacing="4">
                     <Label Text="Your Name" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
                     <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
-                        <Entry Text="John" IsEnabled="False" BackgroundColor="Transparent" />
+                        <Entry Text="{Binding FullName}" IsEnabled="False" BackgroundColor="Transparent" />
                     </Frame>
                 </StackLayout>
 
-                <!-- d) Last name -->
-                <StackLayout Spacing="4">
-                    <Label Text="Last name" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
-                    <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
-                        <Entry Text="Doe" IsEnabled="False" BackgroundColor="Transparent" />
-                    </Frame>
-                </StackLayout>
+         
 
                 <!-- e) Location -->
                 <StackLayout Spacing="4">
                     <Label Text="Location" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
                     <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
-                        <Entry
-              Text="Sarajevo, Bosnia and Herzegovina"
-              IsEnabled="False"
-              BackgroundColor="Transparent" />
+                        <Entry Text="{Binding Location}" IsEnabled="False" BackgroundColor="Transparent" />
                     </Frame>
                 </StackLayout>
 
@@ -93,15 +84,14 @@
                 <StackLayout Spacing="4">
                     <Label Text="Your Email" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
                     <Frame BackgroundColor="White" CornerRadius="4" Padding="8" HasShadow="False">
-                        <Entry
-              Text="johndoe@hotmail.com"
-              IsEnabled="False"
-              Keyboard="Email"
-              BackgroundColor="Transparent" />
+                        <Entry Text="{Binding Email}" IsEnabled="False" BackgroundColor="Transparent" />
                     </Frame>
                 </StackLayout>
 
+                    
+                   
                 <!-- g) Password + eye toggle -->
+                <!--
                 <StackLayout Spacing="4">
                     <Label Text="Password" FontFamily="JosefinSans" FontSize="12" TextColor="Black" />
                     <Grid>
@@ -126,7 +116,7 @@
                             </Image.GestureRecognizers>
                         </Image>
                     </Grid>
-                </StackLayout>
+                </StackLayout>  -->
 
                 <!-- h) QR‐scan button at bottom of scroll -->
                 <Frame

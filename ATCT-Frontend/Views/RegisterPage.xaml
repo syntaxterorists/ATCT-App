@@ -163,12 +163,12 @@
 
         <!-- 8) Register button -->
         <Button
-      Grid.Row="7"
-      Text="Register"
-      Style="{StaticResource OutlineButtonStyle}"
-      FontAttributes="Bold"
-      Clicked="OnRegisterClicked"
-      Margin="32,24" />
+  Grid.Row="7"
+  Text="Register"
+  Style="{StaticResource OutlineButtonStyle}"
+  FontAttributes="Bold"
+  Command="{Binding RegisterCommand}"
+  Margin="32,24" />
 
         <!-- 9) Info icon -->
         <Image

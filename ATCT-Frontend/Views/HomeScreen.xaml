@@ -117,48 +117,65 @@
                 </Grid>
 
                 <!-- 5) Speakers list -->
+                
                 <Label
-          Text="Speakers:"
-          FontFamily="JosefinSans"
-          FontSize="18"
-          FontAttributes="Bold"
-          TextColor="Black"
-          Margin="0,16,0,8" />
+    Text="Speakers:"
+    FontFamily="JosefinSans"
+    FontSize="18"
+    FontAttributes="Bold"
+    TextColor="Black"
+    Margin="0,16,0,8" />
 
-                <StackLayout Spacing="16">
-                    <StackLayout Orientation="Horizontal" Spacing="16">
-                        <Image Source="speakerfemale" HeightRequest="36" WidthRequest="36" />
-                        <Label Text="Speaker #1"
-                   FontFamily="JosefinSans"
-                   FontSize="14"
-                   TextColor="Black"
-                   VerticalOptions="Center" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" Spacing="16">
-                        <Image Source="speakermale" HeightRequest="36" WidthRequest="36" />
-                        <Label Text="Speaker #2"
-                   FontFamily="JosefinSans"
-                   FontSize="14"
-                   TextColor="Black"
-                   VerticalOptions="Center" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" Spacing="16">
-                        <Image Source="speakerfemale" HeightRequest="36" WidthRequest="36" />
-                        <Label Text="Speaker #3"
-                   FontFamily="JosefinSans"
-                   FontSize="14"
-                   TextColor="Black"
-                   VerticalOptions="Center" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" Spacing="16">
-                        <Image Source="speakermale" HeightRequest="36" WidthRequest="36" />
-                        <Label Text="Speaker #4"
-                   FontFamily="JosefinSans"
-                   FontSize="14"
-                   TextColor="Black"
-                   VerticalOptions="Center" />
-                    </StackLayout>
-                </StackLayout>
+                <CollectionView
+    ItemsSource="{Binding Speakers}"
+    Margin="0,0,0,24"
+    SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame
+                Margin="16,8"
+                BackgroundColor="#FCA028"
+                CornerRadius="16"
+                Padding="12"
+                HasShadow="False">
+
+                                <HorizontalStackLayout Spacing="16">
+                                    <!-- Speaker Image -->
+                                    <Frame
+                        Padding="0"
+                        CornerRadius="35"
+                        HeightRequest="70"
+                        WidthRequest="70"
+                        IsClippedToBounds="True"
+                        HasShadow="False"
+                        BackgroundColor="White">
+                                        <Image
+                            Source="{Binding ImageUrl}"
+                            Aspect="AspectFill"
+                            HeightRequest="70"
+                            WidthRequest="70" />
+                                    </Frame>
+
+                                    <!-- Speaker Info -->
+                                    <VerticalStackLayout Spacing="4">
+                                        <Label
+                            Text="{Binding FullName}"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            FontFamily="JosefinSans" />
+                                        <Label
+                            Text="{Binding Description}"
+                            FontSize="14"
+                            TextColor="White"
+                            FontFamily="JosefinSans"
+                            LineBreakMode="WordWrap" />
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
             </StackLayout>
         </ScrollView>

@@ -5,117 +5,34 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ATCT_Frontend.Views"
     NavigationPage.HasNavigationBar="False"
-    BackgroundImageSource="backgroundgeometric"
-    >
+    BackgroundImageSource="backgroundgeometric">
 
     <Grid RowDefinitions="*,Auto">
-        <!-- SCROLLABLE CONTENT -->
         <ScrollView Grid.Row="0">
-            <Grid
-        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto"
-        RowSpacing="16"
-        Padding="16">
+            <StackLayout Padding="16" Spacing="24">
 
-                <!-- 1) Header: logo + underline -->
+                <!-- Header -->
                 <StackLayout Orientation="Horizontal" Spacing="8">
-                    <Image
-            Source="atctlogocolorful"
-            HeightRequest="120"
-            HorizontalOptions="Start" />
-                    <BoxView
-            Color="#EF941F"
-            HeightRequest="4"
-            WidthRequest="60"
-            VerticalOptions="End" />
+                    <Image Source="atctlogocolorful" HeightRequest="120" HorizontalOptions="Start" />
+                    <BoxView Color="#EF941F" HeightRequest="4" WidthRequest="60" VerticalOptions="End" />
                 </StackLayout>
 
-                <!-- 2) Page title -->
-                <Label
-          Grid.Row="1"
-          Text="ATCT venues"
-          FontFamily="JosefinSans"
-          FontSize="24"
-          FontAttributes="Bold"
-          TextColor="Black" />
+                <Label Text="ATCT Venues" FontFamily="JosefinSans" FontSize="24" FontAttributes="Bold" TextColor="Black" />
 
-                <!-- 3) Venue name -->
-                <Label
-          Grid.Row="2"
-          Text="Gazi Husrev-bey Library"
-          FontFamily="JosefinSans"
-          FontSize="22"
-          FontAttributes="Bold"
-          TextColor="Black" />
+                <!-- Venue 1 -->
+                <Label x:Name="Venue1Name" FontFamily="JosefinSans" FontSize="22" FontAttributes="Bold" TextColor="Black" />
+                <Image x:Name="Venue1Image" Aspect="AspectFill" HeightRequest="200" />
+                <Label x:Name="Venue1Desc" FontFamily="JosefinSans" FontSize="14" TextColor="Black" LineBreakMode="WordWrap" />
 
-                <!-- 4) Date / day -->
-                <Label
-          Grid.Row="3"
-          Text="06/06/2024 - DAY 1"
-          FontFamily="JosefinSans"
-          FontSize="16"
-          TextColor="#FCA028" />
+                <!-- Venue 2 -->
+                <Label x:Name="Venue2Name" FontFamily="JosefinSans" FontSize="22" FontAttributes="Bold" TextColor="Black" />
+                <Image x:Name="Venue2Image" Aspect="AspectFill" HeightRequest="200" />
+                <Label x:Name="Venue2Desc" FontFamily="JosefinSans" FontSize="14" TextColor="Black" LineBreakMode="WordWrap" />
 
-                <!-- 5) Image / Text toggle container -->
-                <Frame
-  Grid.Row="4"
-  HasShadow="False"
-  BorderColor="#EF941F"
-  CornerRadius="8"
-  Padding="0"
-  HorizontalOptions="Fill"
-  VerticalOptions="Fill">
-
-                    <!-- Inner grid that catches the swipes -->
-                    <Grid x:Name="SwipeContainer">
-                        <Grid.GestureRecognizers>
-                            <SwipeGestureRecognizer 
-        Direction="Right"
-        Swiped="OnContentSwiped" />
-                            <SwipeGestureRecognizer 
-        Direction="Left"
-        Swiped="OnContentSwiped" />
-                        </Grid.GestureRecognizers>
-
-                        <!-- Venue image, now transparent to input -->
-                        <Image
-      x:Name="VenueImage"
-      Source="ghb"
-      Aspect="AspectFill"
-      HorizontalOptions="Fill"
-      VerticalOptions="Fill"
-      InputTransparent="True" />
-
-                        <!-- Text overlay, also transparent -->
-                        <Label
-      x:Name="VenueText"
-      Text="The Gazi Husrev-bey Library in Sarajevo, founded in 1537, is a National Monument with a vast collection of Islamic manuscripts and books in various languages. It survived the Bosnian War and holds around 100,000 items, including manuscripts, documents, printed books, and a museum collection."
-      FontFamily="JosefinSans"
-      FontSize="14"
-      TextColor="Black"
-      Padding="16"
-      VerticalOptions="Center"
-      HorizontalTextAlignment="Center"
-      LineBreakMode="WordWrap"
-      InputTransparent="True"
-      IsVisible="False" />
-                    </Grid>
-                </Frame>
-
-                <!-- 6) Swipe instruction -->
-                <Label
-          x:Name="SwipeInstruction"
-          Grid.Row="5"
-          Text="Swipe right on the picture for more info 👉"
-          FontFamily="JosefinSans"
-          FontSize="14"
-          TextColor="Black"
-          HorizontalTextAlignment="Center"
-          Margin="0,8,0,0" />
-
-            </Grid>
+            </StackLayout>
         </ScrollView>
 
-        <!-- 7) Bottom nav, pinned -->
+        <!-- Bottom nav bar -->
         <views:BottomNavBar Grid.Row="1" />
     </Grid>
 </ContentPage>

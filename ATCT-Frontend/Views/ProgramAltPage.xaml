@@ -16,30 +16,30 @@
 
         <!-- Header -->
         <HorizontalStackLayout
-      Grid.Row="0"
-      Padding="16,16,16,0"
-      Spacing="16"
-      VerticalOptions="Start">
+            Grid.Row="0"
+            Padding="16,16,16,0"
+            Spacing="16"
+            VerticalOptions="Start">
             <Image
-        Source="arrowicon"
-        HeightRequest="32"
-        WidthRequest="32">
+                Source="arrowicon"
+                HeightRequest="32"
+                WidthRequest="32">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnBackTapped" />
                 </Image.GestureRecognizers>
             </Image>
             <VerticalStackLayout Spacing="4">
                 <Label
-          Text="Program"
-          FontFamily="JosefinSans"
-          FontSize="24"
-          FontAttributes="Bold"
-          TextColor="Black" />
+                    Text="Program"
+                    FontFamily="JosefinSans"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="Black" />
                 <BoxView
-          Color="#FCA028"
-          HeightRequest="4"
-          WidthRequest="60"
-          HorizontalOptions="Start" />
+                    Color="#FCA028"
+                    HeightRequest="4"
+                    WidthRequest="60"
+                    HorizontalOptions="Start" />
             </VerticalStackLayout>
         </HorizontalStackLayout>
 
@@ -47,74 +47,40 @@
         <ScrollView Grid.Row="1">
             <StackLayout Padding="16" Spacing="16">
 
-                <!-- 08:00 Opening (nav to OpeningAltAltPage) -->
-                <Frame
-          CornerRadius="12"
-          HasShadow="False"
-          BackgroundColor="#181646"
-          Padding="12">
-                    <StackLayout>
-                        <Label
-              Text="08:00"
-              FontFamily="JosefinSans"
-              FontSize="18"
-              TextColor="White" />
-                        <Label
-              Text="Opening"
-              FontFamily="JosefinSans"
-              FontSize="18"
-              TextColor="White" />
-                    </StackLayout>
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnOpeningTapped" NumberOfTapsRequired="1" />
-                    </Frame.GestureRecognizers>
-                </Frame>
+                <CollectionView ItemsSource="{Binding Sessions}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="12" HasShadow="False" BackgroundColor="#FCA028" Padding="12" Margin="0,0,0,12">
+                                <StackLayout>
+                                    <Label Text="{Binding StartTime, StringFormat='{0:HH:mm}'}"
+                           FontFamily="JosefinSans" FontSize="16" TextColor="White" />
+                                    <Label Text="{Binding Title}" FontFamily="JosefinSans" FontSize="18" FontAttributes="Bold" TextColor="White" />
+                                    <Label Text="{Binding Location}" FontSize="14" TextColor="White"/>
+                                    <Label Text="{Binding AttendeeDisplay}" FontSize="14" TextColor="White"/>
 
-                <!-- 09:00 Introduction speech -->
-                <Frame
-          CornerRadius="12"
-          HasShadow="False"
-          BackgroundColor="#FCA028"
-          Padding="12">
-                    <Grid ColumnDefinitions="*,Auto" RowSpacing="4">
-                        <Label
-              Grid.Column="0"
-              Text="09:00 Introduction speech"
-              FontFamily="JosefinSans"
-              FontSize="18"
-              TextColor="White" />
-                        <Label
-              Grid.Column="1"
-              Text="→"
-              FontFamily="JosefinSans"
-              FontSize="24"
-              TextColor="White"
-              VerticalOptions="Center" />
-                    </Grid>
-                </Frame>
+                                    <!-- Dugmad -->
+                                    <HorizontalStackLayout Spacing="10" Margin="0,10,0,0">
+                                        <Button Text="Prijavi se"
+                                BackgroundColor="White"
+                                TextColor="#FCA028"
+                                FontAttributes="Bold"
+                                Padding="10,5"
+                                Clicked="OnRegisterClicked"
+                                BindingContext="{Binding .}" />
 
-                <!-- 10:30 Speaker 2 -->
-                <Frame
-          CornerRadius="12"
-          HasShadow="False"
-          BackgroundColor="#FCA028"
-          Padding="12">
-                    <Grid ColumnDefinitions="*,Auto" RowSpacing="4">
-                        <Label
-              Grid.Column="0"
-              Text="10:30 Speaker 2"
-              FontFamily="JosefinSans"
-              FontSize="18"
-              TextColor="White" />
-                        <Label
-              Grid.Column="1"
-              Text="→"
-              FontFamily="JosefinSans"
-              FontSize="24"
-              TextColor="White"
-              VerticalOptions="Center" />
-                    </Grid>
-                </Frame>
+                                        <Button Text="Recenzija"
+                                BackgroundColor="#181646"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                Padding="10,5"
+                                Clicked="OnReviewClicked"
+                                BindingContext="{Binding .}" />
+                                    </HorizontalStackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
             </StackLayout>
         </ScrollView>

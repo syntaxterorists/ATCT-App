@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+    
 <Shell
     x:Class="ATCT_Frontend.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ATCT_Frontend.Views"
+    xmlns:local="clr-namespace:ATCT_Frontend.Views"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate views:Splashscreen1}"
-        Route="SplashScreen1" />
+        Route="SplashScreen1"
+        />
+    <ShellContent
+    Route="LoginPage"
+    ContentTemplate="{DataTemplate local:LoginPage}" />
+    <!-- Glavne stranice -->
+    <ShellContent Route="HomeScreen" ContentTemplate="{DataTemplate local:HomeScreen}" />
+    <ShellContent Route="RegisterPage" ContentTemplate="{DataTemplate local:RegisterPage}" />
+    <ShellContent Route="Splashscreen1" ContentTemplate="{DataTemplate local:Splashscreen1}" />
+    <ShellContent Route="BottomNavBar" ContentTemplate="{DataTemplate local:BottomNavBar}" />
+    
 
+
+
+    <!-- Onboarding -->
+    <ShellContent Route="OnboardingPage1" ContentTemplate="{DataTemplate local:OnboardingPage1}" />
+    <ShellContent Route="OnboardingPage2" ContentTemplate="{DataTemplate local:OnboardingPage2}" />
+    <ShellContent Route="OnboardingPage3" ContentTemplate="{DataTemplate local:OnboardingPage3}" />
+    <ShellContent Route="OnboardingPage4" ContentTemplate="{DataTemplate local:OnboardingPage4}" />
+
+    <!-- Ostale stranice -->
+    <ShellContent Route="AboutAltPage" ContentTemplate="{DataTemplate local:AboutAltPage}" />
+    <ShellContent Route="AccountCreationPage" ContentTemplate="{DataTemplate local:AccountCreationPage}" />
+    <ShellContent Route="InfoPage" ContentTemplate="{DataTemplate local:InfoPage}" />
+    <!--<ShellContent Route="OpeningAltPage" ContentTemplate="{DataTemplate local:OpeningAltPage}" />-->
+    <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
+    <ShellContent Route="ProgramAltPage" ContentTemplate="{DataTemplate local:ProgramAltPage}" />
+    <ShellContent Route="SpeakersAltPage" ContentTemplate="{DataTemplate local:SpeakersAltPage}" />
+    <ShellContent Route="VenuePage" ContentTemplate="{DataTemplate local:VenuePage}" />
 
 </Shell>

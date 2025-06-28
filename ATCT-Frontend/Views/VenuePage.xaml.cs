@@ -1,33 +1,38 @@
-using Microsoft.Maui.Controls;
+﻿using Microsoft.Maui.Controls;
+using ATCT_Frontend.Models;
+using System.Net.Http.Json;
 
 namespace ATCT_Frontend.Views
 {
     public partial class VenuePage : ContentPage
     {
-        bool showingText = false;
-
         public VenuePage()
         {
             InitializeComponent();
+            LoadVenues();
         }
 
-        private void OnContentSwiped(object sender, SwipedEventArgs e)
+        private async void LoadVenues()
         {
-            if (!showingText && e.Direction == SwipeDirection.Right)
+            try
             {
-                // Show the description text
-                VenueImage.IsVisible = false;
-                VenueText.IsVisible = true;
-                SwipeInstruction.Text = "Swipe left to see the picture ??";
-                showingText = true;
+                var client = new HttpClient();
+                var venues = await client.GetFromJsonAsync<List<Models.Location>>("http://10.0.2.2:5279/api/Locations");
+
+                if (venues != null && venues.Count >= 2)
+                {
+                    Venue1Name.Text = venues[0].Name;
+                    Venue1Desc.Text = venues[0].Description;
+                    Venue1Image.Source = venues[0].ImageSource;
+
+                    Venue2Name.Text = venues[1].Name;
+                    Venue2Desc.Text = venues[1].Description;
+                    Venue2Image.Source = venues[1].ImageSource;
+                }
             }
-            else if (showingText && e.Direction == SwipeDirection.Left)
+            catch (Exception ex)
             {
-                // Restore the image
-                VenueText.IsVisible = false;
-                VenueImage.IsVisible = true;
-                SwipeInstruction.Text = "Swipe right on the picture for more info ??";
-                showingText = false;
+                await DisplayAlert("Error", ex.Message, "OK");
             }
         }
     }

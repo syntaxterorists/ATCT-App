@@ -1,4 +1,5 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\aboutfield.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\ajla.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\arrowicon.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\atctauthor.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\atcticoncpu.png
@@ -13,7 +14,10 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\crowdone.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\crowdtwo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\elipse.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\filledcircle.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\fsk.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\ghb.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\hana.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\haris.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\iconhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\iconlocation.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\iconprofile.png
@@ -42,6 +46,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\spacetwo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\speakerfemale.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\speakersfield.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\spekermale.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\tarik.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\user.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\wifiicon.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\year.png

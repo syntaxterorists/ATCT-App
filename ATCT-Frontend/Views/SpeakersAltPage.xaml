@@ -10,21 +10,21 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"    />
+            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Header with back arrow + title -->
+        <!-- Header -->
         <HorizontalStackLayout
-      Grid.Row="0"
-      Padding="16,16,16,0"
-      Spacing="16"
-      VerticalOptions="Start">
+            Grid.Row="0"
+            Padding="16,16,16,0"
+            Spacing="16"
+            VerticalOptions="Start">
 
             <Image
-        Source="arrowicon"
-        HeightRequest="32"
-        WidthRequest="32">
+                Source="arrowicon"
+                HeightRequest="32"
+                WidthRequest="32">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnBackTapped" />
                 </Image.GestureRecognizers>
@@ -32,95 +32,73 @@
 
             <VerticalStackLayout Spacing="4">
                 <Label
-          Text="Speakers"
-          FontFamily="JosefinSans"
-          FontSize="24"
-          FontAttributes="Bold"
-          TextColor="Black" />
+                    Text="Speakers"
+                    FontFamily="JosefinSans"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="Black" />
                 <BoxView
-          Color="#FCA028"
-          HeightRequest="4"
-          WidthRequest="60"
-          HorizontalOptions="Start" />
+                    Color="#FCA028"
+                    HeightRequest="4"
+                    WidthRequest="60"
+                    HorizontalOptions="Start" />
             </VerticalStackLayout>
         </HorizontalStackLayout>
 
-        <!-- Scrollable list of speakers -->
-        <ScrollView Grid.Row="1">
-            <StackLayout Padding="16" Spacing="16">
-
-                <!-- Repeat this block for each speaker -->
-                <Grid ColumnDefinitions="Auto, *" RowSpacing="8" Padding="0">
-                    <!-- Photo -->
-                    <Image
-            Source="kemalmalovcic"
-            HeightRequest="80"
-            WidthRequest="80"
-            Aspect="AspectFill"
-            VerticalOptions="Center" />
-
-                    <!-- Info box -->
+        <!-- List of speakers -->
+        <CollectionView
+            Grid.Row="1"
+            ItemsSource="{Binding Speakers}"
+            Margin="0,12,0,12"
+            SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
                     <Frame
-            Grid.Column="1"
-            CornerRadius="12"
-            BackgroundColor="#FCA028"
-            HasShadow="False"
-            Padding="12"
-            VerticalOptions="Center">
-                        <StackLayout Spacing="4">
-                            <Label
-                Text="Kemal Malovčić"
-                FontFamily="JosefinSans"
-                FontSize="18"
-                FontAttributes="Bold"
-                TextColor="White" />
-                            <Label
-                Text="Dipl. in. tezga i kafana, svjetski prvak u pogađanju oktava"
-                FontFamily="JosefinSans"
-                FontSize="14"
-                TextColor="White"
-                LineBreakMode="WordWrap" />
-                        </StackLayout>
+                        Margin="16,8"
+                        BackgroundColor="#FCA028"
+                        CornerRadius="16"
+                        Padding="12"
+                        HasShadow="False">
+
+                        <HorizontalStackLayout Spacing="16">
+                            <!-- Speaker Image -->
+                            <Frame
+                                Padding="0"
+                                CornerRadius="35"
+                                HeightRequest="70"
+                                WidthRequest="70"
+                                IsClippedToBounds="True"
+                                HasShadow="False"
+                                BackgroundColor="White">
+                                <Image
+                                    Source="{Binding ImageUrl}"
+                                    Aspect="AspectFill"
+                                    HeightRequest="70"
+                                    WidthRequest="70" />
+                            </Frame>
+
+                            <!-- Speaker Info -->
+                            <VerticalStackLayout Spacing="4">
+                                <Label
+                                    Text="{Binding FullName}"
+                                    FontSize="16"
+                                    FontAttributes="Bold"
+                                    TextColor="White"
+                                    FontFamily="JosefinSans" />
+                                <Label
+                                    Text="{Binding Description}"
+                                    FontSize="14"
+                                    TextColor="White"
+                                    FontFamily="JosefinSans"
+                                    LineBreakMode="WordWrap" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
                     </Frame>
-                </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
 
-                <!-- Copy above Grid 3 more times (or bind to a collection for real data) -->
-                <!-- ... -->
-                <Grid ColumnDefinitions="Auto, *" RowSpacing="8" Padding="0">
-                    <Image Source="kemalmalovcic" HeightRequest="80" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" />
-                    <Frame Grid.Column="1" CornerRadius="12" BackgroundColor="#FCA028" HasShadow="False" Padding="12" VerticalOptions="Center">
-                        <StackLayout Spacing="4">
-                            <Label Text="Kemal Malovčić" FontFamily="JosefinSans" FontSize="18" FontAttributes="Bold" TextColor="White" />
-                            <Label Text="Dipl. in. tezga i kafana, svjetski prvak u pogađanju oktava" FontFamily="JosefinSans" FontSize="14" TextColor="White" LineBreakMode="WordWrap" />
-                        </StackLayout>
-                    </Frame>
-                </Grid>
-
-                <Grid ColumnDefinitions="Auto, *" RowSpacing="8" Padding="0">
-                    <Image Source="kemalmalovcic" HeightRequest="80" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" />
-                    <Frame Grid.Column="1" CornerRadius="12" BackgroundColor="#FCA028" HasShadow="False" Padding="12" VerticalOptions="Center">
-                        <StackLayout Spacing="4">
-                            <Label Text="Kemal Malovčić" FontFamily="JosefinSans" FontSize="18" FontAttributes="Bold" TextColor="White" />
-                            <Label Text="Dipl. in. tezga i kafana, svjetski prvak u pogađanju oktava" FontFamily="JosefinSans" FontSize="14" TextColor="White" LineBreakMode="WordWrap" />
-                        </StackLayout>
-                    </Frame>
-                </Grid>
-
-                <Grid ColumnDefinitions="Auto, *" RowSpacing="8" Padding="0">
-                    <Image Source="kemalmalovcic" HeightRequest="80" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" />
-                    <Frame Grid.Column="1" CornerRadius="12" BackgroundColor="#FCA028" HasShadow="False" Padding="12" VerticalOptions="Center">
-                        <StackLayout Spacing="4">
-                            <Label Text="Kemal Malovčić" FontFamily="JosefinSans" FontSize="18" FontAttributes="Bold" TextColor="White" />
-                            <Label Text="Dipl. in. tezga i kafana, svjetski prvak u pogađanju oktava" FontFamily="JosefinSans" FontSize="14" TextColor="White" LineBreakMode="WordWrap" />
-                        </StackLayout>
-                    </Frame>
-                </Grid>
-
-            </StackLayout>
-        </ScrollView>
-
-        <!-- Bottom nav bar pinned -->
+        <!-- Bottom nav -->
         <views:BottomNavBar Grid.Row="2" />
-
     </Grid>
 </ContentPage>
