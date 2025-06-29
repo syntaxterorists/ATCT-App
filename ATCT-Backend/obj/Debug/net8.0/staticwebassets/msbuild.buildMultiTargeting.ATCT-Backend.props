@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\ATCT-Backend.props" />
-</Project>

@@ -148,8 +148,10 @@
             BackgroundColor="#FCA028"
             TextColor="White"
             CornerRadius="20"
-            Padding="12,8" />
+            Padding="12,8" 
+            Clicked="OnNextClicked"/>
                 </HorizontalStackLayout>
+
 
             </StackLayout>
         </ScrollView>

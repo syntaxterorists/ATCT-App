@@ -33611,24 +33611,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\berin\\.nuget\\packages\\": {},
+    "C:\\Users\\ADINA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\berin\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\ATCT-Frontend.csproj",
+      "projectUniqueName": "C:\\Users\\ADINA\\Documents\\GitHub\\ATCTApp\\ATCT-Frontend\\ATCT-Frontend.csproj",
       "projectName": "ATCT-Frontend",
-      "projectPath": "C:\\Users\\berin\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\ATCT-Frontend.csproj",
-      "packagesPath": "C:\\Users\\berin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\berin\\Documents\\GitHub\\ATCT-App\\ATCT-Frontend\\obj\\",
+      "projectPath": "C:\\Users\\ADINA\\Documents\\GitHub\\ATCTApp\\ATCT-Frontend\\ATCT-Frontend.csproj",
+      "packagesPath": "C:\\Users\\ADINA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADINA\\Documents\\GitHub\\ATCTApp\\ATCT-Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\berin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADINA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

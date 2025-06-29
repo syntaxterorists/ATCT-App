@@ -53,21 +53,21 @@
                        Aspect="Fill"
                        WidthRequest="340"
                        HeightRequest="106"
-                       Margin="0,0,0,110"
+                       Margin="0,40,0,100"
                        HorizontalOptions="Center"/>
 
                 <!-- 2025 logo under it -->
                 <Image Source="year.png"
                        Grid.Row="1"
-                       WidthRequest="70"
-                       HeightRequest="40"
+                       WidthRequest="80"
+                       HeightRequest="70"
                        HorizontalOptions="End"
-                       Margin="0,-220,0,0"/>
+                       Margin="0,-220,-30,0"/>
             </Grid>
 
             <!-- Subtitle -->
             <Label Text="International&#10;Conference on&#10;Advances in&#10;Traffic and&#10;Communication&#10;Technologies"
-                   FontSize="30"
+                   FontSize="35"
                    TextColor="White"
                    FontFamily="OcrAExtended"
                    HorizontalTextAlignment="Center"
@@ -75,26 +75,28 @@
                    Margin="0,-60,0,20"/>
 
             <!-- Icons -->
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="0,10,0,10">
-                <Image Source="caricon.png" WidthRequest="30" HeightRequest="30"/>
-                <Image Source="planeicon.png" WidthRequest="30" HeightRequest="30"/>
-                <Image Source="wifiicon.png" WidthRequest="30" HeightRequest="30"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="15" Margin="0,10,0,10">
+                <Image Source="caricon.png" WidthRequest="40" HeightRequest="40"/>
+                <Image Source="planeicon.png" WidthRequest="40" HeightRequest="40"/>
+                <Image Source="wifiicon.png" WidthRequest="40" HeightRequest="40"/>
             </HorizontalStackLayout>
 
             <!-- Button -->
             <Button Text="Get started"
                     BackgroundColor="#FFA500"
                     TextColor="Black"
+                    FontSize="18"
                     FontAttributes="Bold"
-                    CornerRadius="12"
+                    CornerRadius="5"
                     Padding="20"
                     HorizontalOptions="Center"
-                    Margin="0,50,0,-50"
-                    WidthRequest="200"
+                    Margin="0,10,0,-50"
+                    WidthRequest="250"
                     Clicked="OnGetStartedClicked"/>
         </VerticalStackLayout>
 
-        
+
+
 
     </Grid>
 </ContentPage>

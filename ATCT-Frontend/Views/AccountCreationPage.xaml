@@ -39,7 +39,7 @@
       Source="arrowicon.png"
       HeightRequest="32"
       WidthRequest="32"
-      Margin="16,30,0,0"
+      Margin="20,50,0,0"
       HorizontalOptions="Start"
       VerticalOptions="Start">
             <Image.GestureRecognizers>
@@ -77,14 +77,27 @@
       Margin="32,20,32,0">
             <Button
         Text="Register"
+                FontSize="18"
+                BorderWidth="3"
         Style="{StaticResource OutlineButtonStyle}"
         Command="{Binding RegisterCommand}" 
         Clicked="OnRegisterClicked"/>
             <Button
         Text="Sign in"
+                                FontSize="18"
+                BorderWidth="3"
         Style="{StaticResource OutlineButtonStyle}"
         Command="{Binding SignInCommand}" 
         Clicked="OnSignInClicked" />
+   
+
+
+        <Button
+       Text="Continue as Guest"
+                               FontSize="18"
+               BorderWidth="3"
+       Style="{StaticResource OutlineButtonStyle}"
+       Clicked="OnGuestClicked" />
         </StackLayout>
 
         <!-- 5) Info icon pinned at bottom -->

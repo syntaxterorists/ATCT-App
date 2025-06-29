@@ -39,38 +39,46 @@
                     </Grid.RowDefinitions>
 
                     <!-- 20+ speakers (icon enlarged)-->
-                    <Image Grid.Row="0" Source="atctspeaker" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="0" Source="atctspeaker" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="0" Grid.Column="1"
                  Text="20+ speakers"
                  FontFamily="JosefinSans"
-                 FontSize="16"
+                 FontSize="20"
+                           Margin="15,0,0,0"
+                           FontAttributes="Bold"
                  TextColor="Black"
                  VerticalOptions="Center" />
 
                     <!-- 300+ participants -->
-                    <Image Grid.Row="1" Source="atctparticipants" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="1" Source="atctparticipants" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="1" Grid.Column="1"
                  Text="300+ participants"
                  FontFamily="JosefinSans"
-                 FontSize="16"
+                     Margin="15,0,0,0"
+                     FontAttributes="Bold"
+                 FontSize="20"
                  TextColor="Black"
                  VerticalOptions="Center" />
 
                     <!-- 90+ authors -->
-                    <Image Grid.Row="2" Source="atctauthor" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="2" Source="atctauthor" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="2" Grid.Column="1"
                  Text="90+ authors"
                  FontFamily="JosefinSans"
-                 FontSize="16"
+                 FontSize="20"
+                    Margin="15,0,0,0"
+                     FontAttributes="Bold"
                  TextColor="Black"
                  VerticalOptions="Center" />
 
                     <!-- 50+ papers -->
-                    <Image Grid.Row="3" Source="atctpaper" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="3" Source="atctpaper" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="3" Grid.Column="1"
                  Text="50+ papers"
                  FontFamily="JosefinSans"
-                 FontSize="16"
+                 FontSize="20"
+                     Margin="15,0,0,0"
+                      FontAttributes="Bold"
                  TextColor="Black"
                  VerticalOptions="Center" />
                 </Grid>
@@ -79,7 +87,7 @@
                 <Label
           Text="Who should attend?"
           FontFamily="JosefinSans"
-          FontSize="18"
+          FontSize="22"
           FontAttributes="Bold"
           TextColor="Black"
           Margin="0,16,0,8" />
@@ -92,90 +100,79 @@
                     </Grid.RowDefinitions>
 
                     <!-- Traffic & comm experts -->
-                    <Image Grid.Row="0" Source="atcticoncpu" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="0" Source="atcticoncpu" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="0" Grid.Column="1"
-                 Text="Traffic and communications experts and academic community members"
+                 Text="Traffic and communications experts and academic community members."
                  FontFamily="JosefinSans"
-                 FontSize="14"
+                 FontSize="16"
+                           Margin="15,0"
                  TextColor="Black" />
 
                     <!-- Company reps -->
-                    <Image Grid.Row="1" Source="atctparticipants" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="1" Source="atctparticipants" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="1" Grid.Column="1"
                  Text="Company representatives from Bosnia and Herzegovina, the region, and Europe."
                  FontFamily="JosefinSans"
-                 FontSize="14"
+                 FontSize="16"
+                           Margin="15,0"
                  TextColor="Black" />
 
+
                     <!-- Innovative companies -->
-                    <Image Grid.Row="2" Source="atctspeaker" HeightRequest="36" WidthRequest="36" />
+                    <Image Grid.Row="2" Source="atctspeaker" HeightRequest="50" WidthRequest="50" />
                     <Label Grid.Row="2" Grid.Column="1"
                  Text="Innovative companies in Bosnia and Herzegovina seeking new business cooperation."
                  FontFamily="JosefinSans"
-                 FontSize="14"
+                 FontSize="16"
+                           Margin="15,0"
                  TextColor="Black" />
                 </Grid>
 
                 <!-- 5) Speakers list -->
-                
+
+                <!-- 5) Speakers list -->
                 <Label
-    Text="Speakers:"
-    FontFamily="JosefinSans"
-    FontSize="18"
-    FontAttributes="Bold"
-    TextColor="Black"
-    Margin="0,16,0,8" />
+          Text="Speakers:"
+          FontFamily="JosefinSans"
+          FontSize="22"
+          FontAttributes="Bold"
+          TextColor="Black"
+          Margin="0,16,0,8" />
 
-                <CollectionView
-    ItemsSource="{Binding Speakers}"
-    Margin="0,0,0,24"
-    SelectionMode="None">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Frame
-                Margin="16,8"
-                BackgroundColor="#FCA028"
-                CornerRadius="16"
-                Padding="12"
-                HasShadow="False">
-
-                                <HorizontalStackLayout Spacing="16">
-                                    <!-- Speaker Image -->
-                                    <Frame
-                        Padding="0"
-                        CornerRadius="35"
-                        HeightRequest="70"
-                        WidthRequest="70"
-                        IsClippedToBounds="True"
-                        HasShadow="False"
-                        BackgroundColor="White">
-                                        <Image
-                            Source="{Binding ImageUrl}"
-                            Aspect="AspectFill"
-                            HeightRequest="70"
-                            WidthRequest="70" />
-                                    </Frame>
-
-                                    <!-- Speaker Info -->
-                                    <VerticalStackLayout Spacing="4">
-                                        <Label
-                            Text="{Binding FullName}"
-                            FontSize="16"
-                            FontAttributes="Bold"
-                            TextColor="White"
-                            FontFamily="JosefinSans" />
-                                        <Label
-                            Text="{Binding Description}"
-                            FontSize="14"
-                            TextColor="White"
-                            FontFamily="JosefinSans"
-                            LineBreakMode="WordWrap" />
-                                    </VerticalStackLayout>
-                                </HorizontalStackLayout>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                <StackLayout Spacing="16">
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakerfemale" HeightRequest="50" WidthRequest="50" />
+                        <Label Text="Speaker #1"
+                   FontFamily="JosefinSans"
+                   FontSize="18"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakermale" HeightRequest="50" WidthRequest="50" />
+                        <Label Text="Speaker #2"
+                   FontFamily="JosefinSans"
+                   FontSize="18"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakerfemale" HeightRequest="50" WidthRequest="50" />
+                        <Label Text="Speaker #3"
+                   FontFamily="JosefinSans"
+                   FontSize="18"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="16">
+                        <Image Source="speakermale" HeightRequest="50" WidthRequest="50" />
+                        <Label Text="Speaker #4"
+                   FontFamily="JosefinSans"
+                   FontSize="18"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
 
             </StackLayout>
         </ScrollView>

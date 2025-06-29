@@ -26,57 +26,59 @@
                    WidthRequest="340"
                    HeightRequest="106"
                    Aspect="AspectFit" 
-                   Margin="0,0,0,-10"/>
+                   Margin="-10,20,0,0"/>
             <Image Source="year.png"
                    Grid.Row="1"
-                   WidthRequest="60"
-                   HeightRequest="30"
+                   WidthRequest="80"
+                   HeightRequest="80"
                    HorizontalOptions="End"
-                   Margin="0,0,0,0"
+                   Margin="-10,-40,15,0"
                    Aspect="AspectFit" />
         </Grid>
 
         <!-- Main illustration -->
-        <Frame CornerRadius="20" HasShadow="False" Padding="0" Margin="0,60,0,0" WidthRequest="300" HeightRequest="200">
+        <Frame CornerRadius="20" HasShadow="False" Padding="0" Margin="0,10,0,0" WidthRequest="300" HeightRequest="200">
             <Image Source="crowdtwo.png" Aspect="AspectFill" />
         </Frame>
 
         <!-- Description text -->
         <Label Text="This conference will bring together professionals, experts, and innovative communities from Bosnia and Herzegovina, the region, and Europe. They will explore digital solutions to develop innovative projects, products, and services."
                FontFamily="JosefinSans"
-               FontSize="16"
+               FontAttributes="Bold"
+               FontSize="18"
                TextColor="White"
                HorizontalTextAlignment="Center"
                LineHeight="1.4"
                Margin="0,10,0,0" />
 
         <!-- Page indicators (second filled) -->
-        <HorizontalStackLayout Spacing="8" HorizontalOptions="Center" Margin="0,25,0,0">
+        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" Margin="0,15,0,0">
             <Image Source="opencircle.png" WidthRequest="12" HeightRequest="12" />
-            <Image Source="filledcircle.png" WidthRequest="12" HeightRequest="12" />
+            <Image Source="filledcircle.png" WidthRequest="15" HeightRequest="15" />
             <Image Source="opencircle.png" WidthRequest="12" HeightRequest="12" />
             <Image Source="opencircle.png" WidthRequest="12" HeightRequest="12" />
         </HorizontalStackLayout>
 
         <!-- Next button -->
         <Button Text="Next"
-                FontFamily="JosefinSans"
-                BackgroundColor="#FC9918"
-                TextColor="White"
-                CornerRadius="20"
-                FontSize="18"
-                Padding="12"
-                WidthRequest="220"
-                HorizontalOptions="Center"
-                Margin="0,0,0,0"
-                Clicked="OnNextClicked"/>
+         FontFamily="JosefinSans"
+         FontAttributes="Bold"
+         BackgroundColor="#FC9918"
+         TextColor="black"
+         CornerRadius="5"
+         FontSize="18"
+         Padding="12"
+         WidthRequest="200"
+         HorizontalOptions="Center"
+         Margin="0,0,0,0"
+         Clicked="OnNextClicked"/>
 
         <!-- Back arrow below button -->
         <Image Source="arrowicon.png"
                WidthRequest="24"
                HeightRequest="24"
                HorizontalOptions="Start"
-               Margin="0,10,0,0">
+               Margin="10,0,0,0">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="OnBackTapped"/>
             </Image.GestureRecognizers>

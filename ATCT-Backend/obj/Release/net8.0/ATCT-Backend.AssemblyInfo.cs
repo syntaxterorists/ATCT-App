@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATCT-Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f1395c484016fe118ccee45fdb2a7bdd99a213f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c28339da68d00022d6f81fd8f606b642e8183cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATCT-Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATCT-Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

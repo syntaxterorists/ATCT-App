@@ -21,13 +21,11 @@ namespace ATCT_Frontend.Views
 
                 if (venues != null && venues.Count >= 2)
                 {
-                    Venue1Name.Text = venues[0].Name;
+                    
                     Venue1Desc.Text = venues[0].Description;
-                    Venue1Image.Source = venues[0].ImageSource;
+                    VenueImage.Source = venues[0].ImageSource;
 
-                    Venue2Name.Text = venues[1].Name;
-                    Venue2Desc.Text = venues[1].Description;
-                    Venue2Image.Source = venues[1].ImageSource;
+
                 }
             }
             catch (Exception ex)

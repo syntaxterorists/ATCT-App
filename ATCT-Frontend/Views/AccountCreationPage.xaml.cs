@@ -36,4 +36,16 @@ public partial class AccountCreationPage : ContentPage
         // restore opacity
         this.Opacity = 1;
     }
+
+    private async void OnGuestClicked(object sender, EventArgs e)
+    {
+        // fade out current page
+        await this.FadeTo(0, 10);
+
+        // navigate to the RegisterPage
+        await Navigation.PushAsync(new HomeScreen(), animated: false);
+
+        // restore opacity
+        this.Opacity = 1;
+    }
 }

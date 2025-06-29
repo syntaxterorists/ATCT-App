@@ -18,26 +18,26 @@
         <!-- 1) Header: “About” + orange underline -->
         <StackLayout
       Grid.Row="0"
-      Padding="16,16,16,0"
-      Spacing="4"
+      Padding="16,16,20,0"
+      Spacing="0"
       HorizontalOptions="Start">
 
             <Label
         Text="About"
         FontFamily="JosefinSans"
-        FontSize="24"
+        FontSize="30"
         FontAttributes="Bold"
         TextColor="Black" />
             <BoxView
         Color="#FCA028"
-        HeightRequest="4"
-        WidthRequest="60"
+        HeightRequest="5"
+        WidthRequest="80"
         HorizontalOptions="Start" />
         </StackLayout>
 
         <!-- 2) Scrollable body -->
         <ScrollView Grid.Row="1">
-            <StackLayout Padding="16" Spacing="20">
+            <StackLayout Padding="20" Spacing="0">
 
                 <!-- ATCT heading + blue underline -->
                 <Label
@@ -49,15 +49,16 @@
           HorizontalOptions="Start" />
                 <BoxView
           Color="#1E90FF"
-          HeightRequest="3"
-          WidthRequest="50"
+          HeightRequest="5"
+          WidthRequest="70"
           HorizontalOptions="Start" />
 
                 <!-- Orange question heading -->
                 <Label
           Text="What does ATCT give to the people?"
+                    Margin="0,20"
           FontFamily="JosefinSans"
-          FontSize="18"
+          FontSize="25"
           FontAttributes="Bold"
           TextColor="#FCA028"
           HorizontalOptions="Start" />
@@ -66,14 +67,14 @@
                 <Label
           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat semper ultricies. Donec interdum varius tellus, eget iaculis eros tempus eget. Morbi imperdiet justo turpis, at scelerisque eros tempor ut. Etiam porttitor metus quis nunc molestie porttitor vel in dolor. Nulla eget luctus massa, ac molestie ex."
           FontFamily="JosefinSans"
-          FontSize="14"
+          FontSize="16"
           TextColor="Black"
           LineBreakMode="WordWrap" />
 
                 <Label
           Text="Proin libero ipsum, tincidunt eget sapien varius, finibus pellentesque sapien. In id accumsan elit. Cras sit amet pellentesque nunc, rhoncus dapibus lorem. Proin vitae tortor, bibendum nec commodo quis, elementum maximus vitae nisi. Sed leo tellus, ullamcorper vitae tincidunt vel, gravida at odio. Sed dapibus orci sapien, et consectetur arcu blandit a. Nulla rutrum mauris vitae velit."
           FontFamily="JosefinSans"
-          FontSize="14"
+          FontSize="16"
           TextColor="Black"
           LineBreakMode="WordWrap" />
 

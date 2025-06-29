@@ -11,23 +11,63 @@
         <ScrollView Grid.Row="0">
             <StackLayout Padding="16" Spacing="24">
 
-                <!-- Header -->
+                <!-- 1) Header: logo + underline -->
                 <StackLayout Orientation="Horizontal" Spacing="8">
-                    <Image Source="atctlogocolorful" HeightRequest="120" HorizontalOptions="Start" />
-                    <BoxView Color="#EF941F" HeightRequest="4" WidthRequest="60" VerticalOptions="End" />
+                    <Image
+            Source="atctlogocolorful"
+            HeightRequest="120"
+            HorizontalOptions="Start" />
+                    <BoxView
+            Color="#EF941F"
+            HeightRequest="4"
+            WidthRequest="60"
+            VerticalOptions="End" />
                 </StackLayout>
 
-                <Label Text="ATCT Venues" FontFamily="JosefinSans" FontSize="24" FontAttributes="Bold" TextColor="Black" />
+                <!-- 2) Page title -->
+                <Label
+          Grid.Row="1"
+          Text="ATCT venues"
+          FontFamily="JosefinSans"
+          FontSize="24"
+          FontAttributes="Bold"
+          TextColor="Black" />
+
+                <!-- 3) Venue name -->
+                <Label
+          Grid.Row="2"
+          Text="Gazi Husrev-bey Library"
+          FontFamily="JosefinSans"
+          FontSize="22"
+          FontAttributes="Bold"
+          TextColor="Black" />
+
+                <!-- 4) Date / day -->
+                <Label
+          Grid.Row="3"
+          Text="06/06/2024 - DAY 1"
+          FontFamily="JosefinSans"
+          FontSize="16"
+          TextColor="#FCA028" />
+
 
                 <!-- Venue 1 -->
-                <Label x:Name="Venue1Name" FontFamily="JosefinSans" FontSize="22" FontAttributes="Bold" TextColor="Black" />
-                <Image x:Name="Venue1Image" Aspect="AspectFill" HeightRequest="200" />
+                
+                <Image x:Name="VenueImage" Source="ghb" Aspect="AspectFill" HeightRequest="200" />
                 <Label x:Name="Venue1Desc" FontFamily="JosefinSans" FontSize="14" TextColor="Black" LineBreakMode="WordWrap" />
+                <Label
+      x:Name="VenueText"
+      Text="The Gazi Husrev-bey Library in Sarajevo, founded in 1537, is a National Monument with a vast collection of Islamic manuscripts and books in various languages. It survived the Bosnian War and holds around 100,000 items, including manuscripts, documents, printed books, and a museum collection."
+      FontFamily="JosefinSans"
+      FontSize="14"
+      TextColor="Black"
+      Padding="16"
+      VerticalOptions="Center"
+      HorizontalTextAlignment="Center"
+      LineBreakMode="WordWrap"
+      InputTransparent="True"
+      IsVisible="False" />
 
-                <!-- Venue 2 -->
-                <Label x:Name="Venue2Name" FontFamily="JosefinSans" FontSize="22" FontAttributes="Bold" TextColor="Black" />
-                <Image x:Name="Venue2Image" Aspect="AspectFill" HeightRequest="200" />
-                <Label x:Name="Venue2Desc" FontFamily="JosefinSans" FontSize="14" TextColor="Black" LineBreakMode="WordWrap" />
 
             </StackLayout>
         </ScrollView>
@@ -35,4 +75,5 @@
         <!-- Bottom nav bar -->
         <views:BottomNavBar Grid.Row="1" />
     </Grid>
+
 </ContentPage>

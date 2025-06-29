@@ -16,5 +16,13 @@ namespace ATCT_Frontend.Views
             await Navigation.PopAsync(animated: false);
             this.Opacity = 1;
         }
+
+        private async void OnNextClicked(object sender, EventArgs e)
+        {
+            var next = new FeedbackPage { Opacity = 0 };
+            await Navigation.PushAsync(next, animated: false);
+            await next.FadeTo(1, 300);
+        }
+
     }
 }

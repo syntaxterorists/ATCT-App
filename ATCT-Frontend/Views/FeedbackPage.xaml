@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    x:Class="ATCT_Frontend.Views.FeedbackPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ATCT_Frontend.Views"
+    BackgroundImageSource="backgroundgeometric">
+
+    <VerticalStackLayout
+    Padding="20"
+    Spacing="15">
+
+        <Label 
+        Text="Feedback Form"
+        FontSize="24"
+        HorizontalOptions="Center" />
+
+        <Entry 
+        x:Name="NameEntry"
+        Placeholder="Your Name" />
+
+        <Editor
+        x:Name="MessageEditor"
+        Placeholder="Your Message"
+        AutoSize="TextChanges"
+        HeightRequest="100"/>
+
+        <Label 
+        Text="Rate us (1-5):" />
+
+        <Picker
+        x:Name="RatingPicker"
+        Title="Select a rating">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button
+        Text="Submit"
+            Clicked="OnSubmitClicked"
+        />
+
+    </VerticalStackLayout>
+
+</ContentPage>

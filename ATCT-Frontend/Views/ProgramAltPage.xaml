@@ -43,6 +43,31 @@
             </VerticalStackLayout>
         </HorizontalStackLayout>
 
+        <!-- 08:00 Opening (nav to OpeningAltAltPage) -->
+        <Frame
+          CornerRadius="12"
+          HasShadow="False"
+          BackgroundColor="#181646"
+          Padding="12">
+            <StackLayout>
+                <Label
+              Text="08:00"
+              FontFamily="JosefinSans"
+              FontSize="18"
+              TextColor="White" />
+                <Label
+              Text="Opening"
+              FontFamily="JosefinSans"
+              FontSize="18"
+              TextColor="White" />
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnOpeningTapped" NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+        </Frame>
+     
+      
+
         <!-- Content -->
         <ScrollView Grid.Row="1">
             <StackLayout Padding="16" Spacing="16">
@@ -60,7 +85,7 @@
 
                                     <!-- Dugmad -->
                                     <HorizontalStackLayout Spacing="10" Margin="0,10,0,0">
-                                        <Button Text="Prijavi se"
+                                        <Button Text="Attend"
                                 BackgroundColor="White"
                                 TextColor="#FCA028"
                                 FontAttributes="Bold"
@@ -68,12 +93,12 @@
                                 Clicked="OnRegisterClicked"
                                 BindingContext="{Binding .}" />
 
-                                        <Button Text="Recenzija"
+                                        <Button Text="Feedback"
                                 BackgroundColor="#181646"
                                 TextColor="White"
                                 FontAttributes="Bold"
                                 Padding="10,5"
-                                Clicked="OnReviewClicked"
+                                Clicked="OnFeedbackClicked"
                                 BindingContext="{Binding .}" />
                                     </HorizontalStackLayout>
                                 </StackLayout>

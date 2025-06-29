@@ -56,7 +56,7 @@
       Source="arrowicon"
       HeightRequest="32"
       WidthRequest="32"
-      Margin="16,30,0,0"
+      Margin="20,50,0,0"
       HorizontalOptions="Start"
       VerticalOptions="Start">
             <Image.GestureRecognizers>
@@ -69,7 +69,7 @@
       Grid.Row="1"
       Source="atctlogowhite"
       HeightRequest="80"
-      WidthRequest="80"
+      WidthRequest="150"
       Margin="0,-30,0,8"
       HorizontalOptions="Center" />
 
@@ -86,7 +86,7 @@
         <!-- 4) Subtitle -->
         <Label
       Grid.Row="3"
-      Text="Don’t have an account? Create one"
+      Text="Don’t have an account? Create one!"
       FontFamily="JosefinSans"
       FontSize="16"
       TextColor="White"
@@ -96,17 +96,19 @@
         <!-- 5) Name field -->
         <StackLayout
       Grid.Row="4"
-      Spacing="4"
-      Padding="32,0">
+      Spacing="5"
+      Padding="30,0">
             <Label
         Text="Name:"
         FontFamily="JosefinSans"
+                FontAttributes="Bold"
+                FontSize="16"
         TextColor="White" />
             <Frame
         BackgroundColor="#F8F3F3"
-        CornerRadius="20"
+        CornerRadius="50"
         HasShadow="False"
-        Padding="12">
+        Padding="10">
                 <Entry
           Text="{Binding Name}"
           Placeholder="John Doe"
@@ -115,20 +117,24 @@
             </Frame>
         </StackLayout>
 
+
+
         <!-- 6) E-mail field -->
         <StackLayout
       Grid.Row="5"
-      Spacing="4"
-      Padding="32,12,32,0">
+      Spacing="5"
+      Padding="30,10,30,0">
             <Label
         Text="E-mail:"
         FontFamily="JosefinSans"
+            FontAttributes="Bold"
+            FontSize="16"
         TextColor="White" />
             <Frame
         BackgroundColor="#F8F3F3"
-        CornerRadius="20"
+        CornerRadius="50"
         HasShadow="False"
-        Padding="12">
+        Padding="10">
                 <Entry
           Text="{Binding Email}"
           Placeholder="johndoe@outlook.com"
@@ -141,17 +147,19 @@
         <!-- 7) Password field -->
         <StackLayout
       Grid.Row="6"
-      Spacing="4"
-      Padding="32,12,32,0">
+      Spacing="5"
+      Padding="30,10,30,0">
             <Label
         Text="Password:"
         FontFamily="JosefinSans"
+           FontAttributes="Bold"
+            FontSize="16"
         TextColor="White" />
             <Frame
         BackgroundColor="#F8F3F3"
-        CornerRadius="20"
+        CornerRadius="50"
         HasShadow="False"
-        Padding="12">
+        Padding="10">
                 <Entry
           Text="{Binding Password}"
           Placeholder="********"
@@ -163,12 +171,14 @@
 
         <!-- 8) Register button -->
         <Button
-  Grid.Row="7"
-  Text="Register"
-  Style="{StaticResource OutlineButtonStyle}"
-  FontAttributes="Bold"
-  Command="{Binding RegisterCommand}"
-  Margin="32,24" />
+      Grid.Row="7"
+      Text="Register"
+            FontSize="18"
+            BorderWidth="3"
+      Style="{StaticResource OutlineButtonStyle}"
+      FontAttributes="Bold"
+      Clicked="OnRegisterClicked"
+      Margin="30,25" />
 
         <!-- 9) Info icon -->
         <Image

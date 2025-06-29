@@ -30,6 +30,13 @@ namespace ATCT_Frontend.Views
                 .ContinueWith(_ => this.Opacity = 1,
                               TaskScheduler.FromCurrentSynchronizationContext());
         }
+        private async void OnOpeningTapped(object sender, EventArgs e)
+        {
+            // fade-out + navigate
+            await this.FadeTo(0, 10);
+            await Navigation.PushAsync(new OpeningAltAltPage(), animated: false);
+            this.Opacity = 1;
+        }
 
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
@@ -51,7 +58,7 @@ namespace ATCT_Frontend.Views
             }
         }
 
-        private async void OnReviewClicked(object sender, EventArgs e)
+        private async void OnFeedbackClicked(object sender, EventArgs e)
         {
 
 
@@ -60,8 +67,8 @@ namespace ATCT_Frontend.Views
             {
                 await DisplayAlert("Recenzija", $"Otvaranje recenzije za: {session.Title}", "OK");
 
-                // Kada napraviš ReviewPage, koristi:
-                // await Navigation.PushAsync(new ReviewPage(session.Id));
+                
+              await Navigation.PushAsync(new FeedbackPage(session.Id));
             }
         }
 

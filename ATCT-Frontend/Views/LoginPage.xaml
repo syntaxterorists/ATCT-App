@@ -53,7 +53,7 @@
       Source="arrowicon"
       HeightRequest="32"
       WidthRequest="32"
-      Margin="16,30,0,0"
+      Margin="20,50,0,0"
       HorizontalOptions="Start"
       VerticalOptions="Start">
             <Image.GestureRecognizers>
@@ -66,8 +66,8 @@
       Grid.Row="1"
       Source="atctlogowhite"
       HeightRequest="80"
-      WidthRequest="80"
-      Margin="0,20,0,8"
+      WidthRequest="150"
+      Margin="0,-30,0,8"
       HorizontalOptions="Center" />
 
         <!-- 3) Page title -->
@@ -83,7 +83,7 @@
         <!-- 4) Subtitle -->
         <Label
       Grid.Row="3"
-      Text="Already have an account? Sign in"
+      Text="Already have an account? Sign in!"
       FontFamily="JosefinSans"
       FontSize="16"
       TextColor="White"
@@ -91,17 +91,18 @@
       Margin="0,4,0,20" />
 
         <!-- 5) E-mail field -->
-        <StackLayout Grid.Row="4" Spacing="4" Padding="32,0">
-            <Label Text="Email:" FontFamily="JosefinSans" TextColor="White" />
-            <Frame BackgroundColor="#F8F3F3" CornerRadius="20" HasShadow="False" Padding="12">
+        <StackLayout Grid.Row="4" Spacing="4" Padding="30,10,30,0">
+            <Label Text="Email:" FontFamily="JosefinSans" FontAttributes="Bold" FontSize="16" TextColor="White" />
+            <Frame BackgroundColor="#F8F3F3" CornerRadius="50" HasShadow="False" Padding="10">
                 <Entry Text="{Binding Email}" Placeholder="johndoe@outlook.com" Keyboard="Email" TextColor="Black" BackgroundColor="Transparent" />
             </Frame>
         </StackLayout>
 
         <!-- 6) Password field -->
-        <StackLayout Grid.Row="5" Spacing="4" Padding="32,12,32,0">
-            <Label Text="Password:" FontFamily="JosefinSans" TextColor="White" />
-            <Frame BackgroundColor="#F8F3F3" CornerRadius="20" HasShadow="False" Padding="12">
+        <StackLayout Grid.Row="5" Spacing="4" Padding="30,10,30,0">
+            <Label Text="Password:" FontFamily="JosefinSans"         FontAttributes="Bold"
+        FontSize="16" TextColor="White" />
+            <Frame BackgroundColor="#F8F3F3" CornerRadius="50" HasShadow="False" Padding="10">
                 <Entry Text="{Binding Password}" Placeholder="********" IsPassword="True" TextColor="Black" BackgroundColor="Transparent" />
             </Frame>
         </StackLayout>
@@ -110,10 +111,12 @@
         <Button
       Grid.Row="6"
       Text="Sign in"
+            FontSize="18"
+            BorderWidth="3"
       Style="{StaticResource OutlineButtonStyle}"
       FontAttributes="Bold"
       Command="{Binding SignInCommand}"
-      Margin="32,24" 
+      Margin="30,25" 
       Clicked="OnSignInClicked"/>
 
         <!-- 8) Spacer automatically fills -->
